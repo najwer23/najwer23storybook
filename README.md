@@ -4,9 +4,14 @@
 Rollup plugin for design system (storybook).
 
 ## Install
+
+### yarn
 ```
 yarn add najwer23storybook --dev
-# Or with npm:
+```
+
+### npm
+```
 npm i najwer23storybook
 ```
 
