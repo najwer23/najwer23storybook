@@ -5,62 +5,36 @@
 	"module": "lib/index.esm.js",
 	"types": "lib/index.d.ts",
 	"author": "Mariusz Najwer",
-	"dependencies": {
-		"react-scripts": "5.0.1"
-	},
 	"scripts": {
 		"start": "storybook dev -p 6006",
-		"build-storybook": "storybook build",
-		"build": "rollup -c",
-		"prepublishOnly": "yarn build"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest",
-			"plugin:storybook/recommended"
-		]
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
+		"build": "rollup -c"
 	},
 	"packageManager": "yarn@3.6.3",
 	"devDependencies": {
+		"@babel/core": "^7.23.6",
+		"@babel/preset-env": "^7.23.6",
+		"@babel/preset-react": "^7.23.3",
+		"@babel/preset-typescript": "^7.23.3",
 		"@rollup/plugin-commonjs": "^25.0.7",
 		"@rollup/plugin-node-resolve": "^15.2.3",
 		"@rollup/plugin-typescript": "^11.1.5",
-		"@storybook/addon-essentials": "7.6.6",
-		"@storybook/addon-interactions": "7.6.6",
-		"@storybook/addon-links": "7.6.6",
-		"@storybook/addon-onboarding": "1.0.10",
-		"@storybook/blocks": "7.6.6",
-		"@storybook/preset-create-react-app": "7.6.6",
-		"@storybook/react": "7.6.6",
-		"@storybook/react-webpack5": "7.6.6",
-		"@storybook/test": "7.6.6",
-		"@types/node": "^20.10.5",
+		"@storybook/addon-actions": "^7.6.6",
+		"@storybook/addon-essentials": "^7.6.6",
+		"@storybook/addon-links": "^7.6.6",
+		"@storybook/addon-styling": "^1.3.7",
+		"@storybook/react": "^7.6.6",
+		"@storybook/react-webpack5": "^7.6.6",
 		"@types/react": "^18.2.45",
-		"@types/react-dom": "^18.2.18",
-		"eslint-plugin-storybook": "^0.6.15",
-		"prop-types": "15.8.1",
+		"babel-loader": "^9.1.3",
+		"postcss": "^8.4.32",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"rollup": "^4.9.1",
 		"rollup-plugin-dts": "^6.1.0",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-postcss": "^4.0.2",
-		"storybook": "7.6.6",
-		"typescript": "^5.3.3",
-		"webpack": "5.89.0"
+		"storybook": "^7.6.6",
+		"typescript": "^5.3.3"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0",
