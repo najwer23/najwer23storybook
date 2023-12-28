@@ -5,6 +5,7 @@ import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
 import { terser } from "rollup-plugin-terser";
+import del from "rollup-plugin-delete";
 
 // This is required to read package.json file when
 // using Native ES modules in Node.js
@@ -30,6 +31,7 @@ export default [
 			// },
 		],
 		plugins: [
+			del({ targets: "lib/*" }),
 			peerDepsExternal(),
 			resolve(),
 			commonjs(),
