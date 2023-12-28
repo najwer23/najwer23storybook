@@ -1,10 +1,13 @@
 
-# Design system
+# Design system for React.js
 
-Rollup plugin for design system (storybook).
+These package offers a range of design system assets, including components, styles, and guidelines, to facilitate the development of consistent and user-friendly interfaces across various applications and platforms.
 
 ## Demo
 [https://najwer23.github.io/najwer23storybook/](https://najwer23.github.io/najwer23storybook/)
+
+## Github
+[https://github.com/najwer23/najwer23storybook](https://github.com/najwer23/najwer23storybook)
 
 ## Install
 
