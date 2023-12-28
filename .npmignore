@@ -2,7 +2,6 @@
 releases/yarn-3.6.3.cjs
 .editorconfig
 src/*
-README.md
 .yarnrc.yml
 .storybook/*
 rollup.config.mjs
