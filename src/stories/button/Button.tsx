@@ -1,4 +1,4 @@
-import './button.css';
+import styles from "./Button.module.css"
 
 interface ButtonProps {
 	primary?: boolean;
@@ -15,11 +15,11 @@ export const Button = ({
 	label,
 	...props
 }: ButtonProps) => {
-	const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+	const mode = primary ? styles.primary : styles.secondary;
 	return (
 		<button
 			type="button"
-			className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+			className={[styles.button, styles[size] || undefined, mode].join(' ')}
 			style={{ backgroundColor }}
 			{...props}
 		>
