@@ -1,10 +1,10 @@
 {
 	"name": "najwer23storybook",
-	"version": "1.1.0",
+	"version": "2.0.0",
 	"main": "lib/index.js",
 	"module": "lib/index.esm.js",
 	"types": "lib/index.d.ts",
-	"author": "Mariusz Najwer",
+	"author": "Mariusz Najwer (https://najwer23.github.io/)",
 	"homepage": "https://najwer23.github.io/najwer23storybook",
 	"scripts": {
 		"deploy": "yarn run build-storybook && gh-pages -d storybook-static",
@@ -47,5 +47,16 @@
 	"peerDependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
-	}
+	},
+	"keywords": [
+		"react",
+		"storybook",
+		"design-system",
+		"gh-pages"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/najwer23/najwer23storybook.git"
+	},
+	"license": "MIT"
 }
