@@ -18,7 +18,7 @@ yarn add najwer23storybook --dev
 
 ### npm
 ```
-npm i najwer23storybook
+npm install najwer23storybook --save-dev
 ```
 
 ## Requirements
