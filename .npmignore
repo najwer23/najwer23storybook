@@ -10,3 +10,5 @@ tsconfig.json
 lib/stories/*
 public/img/f.png
 public/index.html
+lib/index.esm.js.map
+lib/index.js.map

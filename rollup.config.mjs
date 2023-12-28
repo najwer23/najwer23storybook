@@ -4,6 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
+import { terser } from "rollup-plugin-terser";
 
 // This is required to read package.json file when
 // using Native ES modules in Node.js
@@ -37,6 +38,7 @@ export default [
 				extensions: [".css"],
 				minimize: true,
 			}),
+			terser(),
 		],
 	},
 	{
