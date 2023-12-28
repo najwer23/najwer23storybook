@@ -1,32 +1,11 @@
 
-# Storybook - design system, Mariusz Najwer
+# Storybook - design system
 
-## Self Update
-```
-npm i -g npm-check-updates
-ncu -u
-npm install
-```
+Rollup plugin for design system (storybook).
 
-## Installation
-```sh
-$ yarn install
+## Install
 ```
-
-## Development
-```sh
-$ yarn start
+yarn add najwer23storybook --dev
+# Or with npm:
+npm i najwer23storybook
 ```
-
-## Production
-```sh
-$ yarn build
-```
-
-## Deploy to gh-pages
-```sh
-$ yarn deploy
-```
-
-## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
