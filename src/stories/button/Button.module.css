@@ -20,7 +20,7 @@
 		user-select: none;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-		@media (hover: hover) {
+		@media (hover: hover) and (pointer: fine) {
 			&:hover {
 				background-color: var(--n23-color-on-primary);
 				box-shadow: var(--n23-shadow);
