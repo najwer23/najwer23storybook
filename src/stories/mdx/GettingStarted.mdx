@@ -1,98 +1,51 @@
 import { Meta } from "@storybook/blocks";
 
-export const RightArrow = () => (
-	<svg
-		viewBox="0 0 14 14"
-		width="12px"
-		height="16px"
-		style={{
-			marginLeft: "4px",
-			display: "inline-block",
-			shapeRendering: "inherit",
-			verticalAlign: "middle",
-			fill: "currentColor",
-			"path fill": "currentColor",
-		}}
-	>
-		<path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
-	</svg>
-);
-
 <Meta title="Getting Started" />
 
-<div className="sb-container">
-  <div className='sb-section-title'>
-    # Welcome! Whether you're a designer or a developer, this guide will help you get started and connect you to the essential resources you need.
+# Design System (React.js) - Mariusz Najwer
+<br />
+<br />
 
-  </div>
-</div>
+## Prerequisites
+```
+"react": "18.2.0"
+"react-dom": "18.2.0"
+"typescript": "5.3.3"
+"storybook": "7.6.6"
+```
 
-<div className="sb-container">
-  <div className='sb-section-title'>
-    ## Requirements
-	<ul>
-		<li><h4>"react": "18.2.0"</h4></li>
-		<li><h4>"react-dom": "18.2.0"</h4></li>
-		<li> <h4>"typescript": "5.3.3"</h4> </li>
-		<li><h4>"storybook": "7.6.6"</h4></li>
-	</ul>
-  </div>
-</div>
+## Install
 
-<div>
+### yarn
+```
+yarn add najwer23storybook --dev
+```
 
-</div>
+### npm
+```
+npm install najwer23storybook --save-dev
+```
 
-<div className="sb-container">
-  <div className='sb-section-title'>
-    ### NPM package
-    <a
-          href="https://www.npmjs.com/package/najwer23storybook"
-          target="_blank"
-        >https://www.npmjs.com/package/najwer23storybook<RightArrow /></a>
-  </div>
-</div>
+## Example
+```
+import { Button } from "najwer23storybook/lib/button";
 
-<div className="sb-container">
-  <div className='sb-section-title'>
-    ### Github
-    <a
-          href="https://github.com/najwer23/najwer23storybook"
-          target="_blank"
-        >https://github.com/najwer23/najwer23storybook<RightArrow /></a>
-  </div>
-</div>
+export const Example = () => {
+	return <Button
+		kind="classic"
+		onClick={() => {}}
+		text="Button"
+	/>
+}
+```
+
+## NPM
+[https://www.npmjs.com/package/najwer23storybook](https://www.npmjs.com/package/najwer23storybook)
+
+## Demo
+[https://najwer23.github.io/najwer23storybook/](https://najwer23.github.io/najwer23storybook/)
+
+## Github
+[https://github.com/najwer23/najwer23storybook](https://github.com/najwer23/najwer23storybook)
 
 
-<div className="sb-container">
-  <div className='sb-section-title'>
-    ### Web
-    <a
-          href="https://najwer23.github.io/najwer23storybook"
-          target="_blank"
-        >https://najwer23.github.io/najwer23storybook<RightArrow /></a>
-  </div>
-</div>
-
-<style>
-{`
-  .sb-container {
-    margin-bottom: 48px;
-  }
-
-  .sb-section-title {
-    margin-bottom: 32px;
-  }
-
-  .sb-section-text a:not(h1 a, h2 a, h3 a) {
-    font-size: 20px;
-  }
-
-  @media screen and (max-width: 600px) {
-    .sb-section {
-      flex-direction: column;
-    }
-  }
-
-`}
-</style>

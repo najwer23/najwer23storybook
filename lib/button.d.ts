@@ -1,12 +1,10 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
 
 interface ButtonProps {
-    primary?: boolean;
-    backgroundColor?: string;
-    size?: 'small' | 'medium' | 'large';
-    label: string;
-    onClick?: () => void;
+    onClick: () => void;
+    text: string;
+    kind: "classic" | "odd";
 }
-declare const Button: ({ primary, size, backgroundColor, label, ...props }: ButtonProps) => react_jsx_runtime.JSX.Element;
+declare const Button: ({ kind, text, ...props }: ButtonProps) => react_jsx_runtime.JSX.Element;
 
 export { Button };
