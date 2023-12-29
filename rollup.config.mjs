@@ -36,7 +36,7 @@ DirOfFileTS.forEach((v, i) => {
 		input: `src/stories/${v}/index.ts`,
 		output: [
 			{
-				file: `lib/${v}.js`,
+				file: `lib/${v.slice(0, 1).toUpperCase() + v.slice(1)}.js`,
 				format: "cjs",
 				sourcemap: true,
 			},
@@ -56,7 +56,12 @@ DirOfFileTS.forEach((v, i) => {
 	});
 	exportDefault.push({
 		input: `lib/${v}/${v.slice(0, 1).toUpperCase() + v.slice(1)}.d.ts`,
-		output: [{ file: `lib/${v}.d.ts`, format: "es" }],
+		output: [
+			{
+				file: `lib/${v.slice(0, 1).toUpperCase() + v.slice(1)}.d.ts`,
+				format: "es",
+			},
+		],
 		plugins: [dts()],
 		external: [/\.css$/],
 	});
