@@ -3,4 +3,5 @@ import { Button } from './Button';
 declare const meta: Meta<typeof Button>;
 export default meta;
 type Story = StoryObj<typeof meta>;
-export declare const Classic: Story;
+export declare const Standard: Story;
+export declare const Disabled: Story;
