@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import "./Theme.css"
 
 const preview: Preview = {
 	parameters: {
@@ -11,11 +12,21 @@ const preview: Preview = {
 		},
 		options: {
 			storySort: {
-				order: [
-					"Getting Started",
-					"Colors"
-				]
+				order: ["Getting Started", "Colors"],
 			},
+		},
+		backgrounds: {
+			default: "twitter",
+			values: [
+				{
+					name: "--n23-color-surface",
+					value: "var(--n23-color-surface)",
+				},
+				{
+					name: "white",
+					value: "#fff",
+				},
+			],
 		},
 	},
 };
