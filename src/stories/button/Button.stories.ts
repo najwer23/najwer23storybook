@@ -19,7 +19,7 @@ type Story = StoryObj<typeof meta>;
 export const Standard: Story = {
 	args: {
 		text: "Button",
-		kind: "button",
+		type: "button",
 		ariaLabel: "button-click"
 	},
 };
@@ -27,7 +27,7 @@ export const Standard: Story = {
 export const Disabled: Story = {
 	args: {
 		text: "Button",
-		kind: "button",
+		type: "button",
 		disabled: true,
 		ariaLabel: "button-click"
 	},

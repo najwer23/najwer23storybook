@@ -3,15 +3,15 @@ import styles from "./Button.module.css"
 interface ButtonProps {
 	onClick: () => void;
 	text: string,
-	kind: "button" | "reset" | "submit";
+	type: "button" | "reset" | "submit";
 	disabled?: boolean;
 	ariaLabel: string;
 }
 
-export const Button = ({ ariaLabel, kind, text, disabled = false, ...props }: ButtonProps) => {
+export const Button = ({ ariaLabel, type, text, disabled = false, ...props }: ButtonProps) => {
 	return (
 		<button
-			type="button"
+			type={type}
 			className={[styles["standard"]].join(' ')}
 			disabled={disabled}
 			title={text}
