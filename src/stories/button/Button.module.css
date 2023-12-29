@@ -14,6 +14,10 @@
 		transition: 0.3s;
 		font-family: var(--n23-font-family);
 
+		-webkit-user-select: none; /* Safari */
+		-ms-user-select: none; /* IE 10 and IE 11 */
+		user-select: none; /* Standard syntax */
+
 		&:hover {
 			background-color: var(--n23-color-on-primary);
 			box-shadow: var(--n23-shadow);
