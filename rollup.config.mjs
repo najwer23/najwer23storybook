@@ -20,17 +20,18 @@ function getFiles(dir, files_) {
 		if (fs.statSync(name).isDirectory()) {
 			getFiles(name, files_);
 		} else {
-			if (name.includes("index.ts"))
-				files_.push(name);
+			if (name.includes("index.ts")) files_.push(name);
 		}
 	}
 	return files_;
 }
 
-const DirOfFileTS = getFiles("src/stories/").map(v=>v.split("//").at(-1).split("/")[0]);
+const DirOfFileTS = getFiles("src/stories/").map(
+	(v) => v.split("//").at(-1).split("/")[0]
+);
 const exportDefault = [];
 
-DirOfFileTS.forEach((v,i) => {
+DirOfFileTS.forEach((v, i) => {
 	exportDefault.push({
 		input: `src/stories/${v}/index.ts`,
 		output: [
@@ -52,13 +53,13 @@ DirOfFileTS.forEach((v,i) => {
 			}),
 			terser(),
 		],
-	},)
+	});
 	exportDefault.push({
-		input: `lib/${v}/${v.slice(0,1).toUpperCase() + v.slice(1)}.d.ts`,
+		input: `lib/${v}/${v.slice(0, 1).toUpperCase() + v.slice(1)}.d.ts`,
 		output: [{ file: `lib/${v}.d.ts`, format: "es" }],
 		plugins: [dts()],
 		external: [/\.css$/],
 	});
-})
+});
 
 export default exportDefault;

@@ -40,3 +40,6 @@ export const Example = () => {
 
 ## Github
 [https://github.com/najwer23/najwer23storybook](https://github.com/najwer23/najwer23storybook)
+
+## NPM
+[https://www.npmjs.com/package/najwer23storybook](https://www.npmjs.com/package/najwer23storybook)
