@@ -1,7 +1,7 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
 
 interface ButtonProps {
-    onClick: () => void;
+    onClick?: () => void;
     text: string;
     type: "button" | "reset" | "submit";
     disabled?: boolean;

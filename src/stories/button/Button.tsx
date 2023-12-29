@@ -1,7 +1,7 @@
 import styles from "./Button.module.css"
 
 interface ButtonProps {
-	onClick: () => void;
+	onClick?: () => void;
 	text: string,
 	type: "button" | "reset" | "submit";
 	disabled?: boolean;
