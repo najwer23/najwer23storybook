@@ -25,7 +25,7 @@ export const Standard: Story = {
 			},
 			{
 				itemLink: "sss",
-				itemLinkText: "text999",
+				itemLinkText: "text9997",
 				itemLinkType: "hash",
 			},
 			{
