@@ -55,7 +55,7 @@ DirOfFileTS.forEach((v, i) => {
 		],
 	});
 	exportDefault.push({
-		input: `lib/${v.slice(0, 1).toUpperCase() + v.slice(1)}.d.ts`,
+		input: `lib/${v}/${v.slice(0, 1).toUpperCase() + v.slice(1)}.d.ts`,
 		output: [
 			{
 				file: `lib/${v.slice(0, 1).toUpperCase() + v.slice(1)}.d.ts`,

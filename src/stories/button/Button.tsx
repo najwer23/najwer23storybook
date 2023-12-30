@@ -1,6 +1,6 @@
-import styles from "./Button.module.css"
+import styles from "./index.module.css"
 
-interface ButtonProps {
+interface Props {
 	onClick?: () => void;
 	text: any,
 	type: "button" | "reset" | "submit";
@@ -8,7 +8,7 @@ interface ButtonProps {
 	ariaLabel: string;
 }
 
-export const Button = ({ ariaLabel, type, text, disabled = false, ...props }: ButtonProps) => {
+export const Button = ({ ariaLabel, type, text, disabled = false, ...props }: Props) => {
 	return (
 		<button
 			type={type}
