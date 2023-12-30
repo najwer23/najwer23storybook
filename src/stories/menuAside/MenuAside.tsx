@@ -8,10 +8,11 @@ interface Props {
 		itemLink: string;
 		itemLinkText: string;
 		itemLinkType: "hash" | "link" | "linkOut"
-	}[]
+	}[];
+	menuTitle: string
 }
 
-export const MenuAside = ({ menuItems }: Props) => {
+export const MenuAside = ({ menuItems, menuTitle }: Props) => {
 	const [menuMobileOpen, setMenuMobileOpen] = useState<boolean>(false);
 	const [width] = useWindowSize();
 
@@ -36,6 +37,11 @@ export const MenuAside = ({ menuItems }: Props) => {
 			{/* Desktop */}
 			<div className={[styles["asideMenuWrapper"]].join(' ')}>
 				<div className={[styles["asideMenu"]].join(' ')}>
+
+					<div className={styles["asideMenuTitle"]}>
+						{menuTitle}
+					</div>
+
 					<ul>
 						{menuItems && (menuItems.map(({ itemLink, itemLinkText, itemLinkType }) => (
 							<li key={`desktopMenu${itemLinkText}`}>
@@ -52,6 +58,11 @@ export const MenuAside = ({ menuItems }: Props) => {
 
 			{/* Mobile */}
 			<div className={[styles["asideMenuMobile"], menuMobileOpen && styles["open"]].join(' ')}>
+
+				<div className={styles["asideMenuTitle"]}>
+					{menuTitle}
+				</div>
+
 				<ul>
 					{menuItems && (menuItems.map(({ itemLink, itemLinkText, itemLinkType }) => (
 						<li key={`mobileMenu${itemLinkText}`} onClick={() => {

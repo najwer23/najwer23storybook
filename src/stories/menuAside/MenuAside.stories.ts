@@ -34,6 +34,7 @@ export const Standard: Story = {
 				itemLinkType: "link",
 			},
 		],
+		menuTitle: "Projects",
 	},
 };
 

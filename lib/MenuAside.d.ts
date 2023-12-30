@@ -6,7 +6,8 @@ interface Props {
         itemLinkText: string;
         itemLinkType: "hash" | "link" | "linkOut";
     }[];
+    menuTitle: string;
 }
-declare const MenuAside: ({ menuItems }: Props) => react_jsx_runtime.JSX.Element;
+declare const MenuAside: ({ menuItems, menuTitle }: Props) => react_jsx_runtime.JSX.Element;
 
 export { MenuAside };
