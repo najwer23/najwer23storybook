@@ -4,8 +4,8 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
-import { terser } from "rollup-plugin-terser";
 import del from "rollup-plugin-delete";
+import terser from "@rollup/plugin-terser";
 
 // https://prateeksurana.me/blog/react-component-library-using-storybook-7/
 // import { Button } from "najwer23storybook/lib/button";

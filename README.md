@@ -28,9 +28,10 @@ import { Button } from "najwer23storybook/lib/Button";
 
 export const Example = () => {
 	return <Button
-		kind="classic"
+		ariaLabel="button-click"
 		onClick={() => {}}
 		text="Button"
+		type="button"
 	/>
 }
 ```
