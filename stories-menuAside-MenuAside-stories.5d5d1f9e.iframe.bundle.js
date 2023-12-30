@@ -15,6 +15,10 @@
 		&::-webkit-scrollbar {
 			display: none;
 		}
+
+		@media (max-width: 575.98px) {
+			display: none;
+		}
 	}
 
 	.index-module__asideMenu__irqSA ul {
@@ -27,6 +31,7 @@
 		font-weight: var(--n23-font-weight-bold);
 		border-bottom: 1px solid var(--n23-color-font-asideMenu);
 		margin-bottom: 20px;
+		padding-bottom: 20px;
 		transition: 0.2s;
 
 		& a {
@@ -35,7 +40,6 @@
 			color: var(--n23-color-font-asideMenu);
 			display: inline-block;
 			width: 100%;
-			padding-bottom: 20px;
 
 			@media (hover: hover) and (pointer: fine) {
 				&:hover {
@@ -45,21 +49,18 @@
 
 			&:active {
 				background-color: var(--n23-color-primary);
+				filter: brightness(100%);
 			}
 
 			&:focus-visible {
 				outline: 2px solid var(--n23-color-on-primary);
-			}
-
-			&:disabled {
-				cursor: not-allowed;
-				background-color: var(--n23-grey);
+				filter: brightness(100%);
 			}
 		}
 
 	}
 }
-`,"",{version:3,sources:["webpack://./src/stories/menuAside/index.module.css"],names:[],mappings:"AAAA;CACC;EACC,sBAAsB;EACtB,YAAY;EACZ,0CAA0C;EAC1C,mCAAmC;EACnC,aAAa;EACb,aAAa;EACb,cAAc;;EAEd,mBAAmB;EACnB,qBAAqB;EACrB,wBAAwB;EACxB,iCAAiC;EACjC;GACC,aAAa;EACd;CACD;;CAEA;EACC,UAAU;EACV,qBAAqB;CACtB;;CAEA;EACC,mCAAmC;EACnC,wCAAwC;EACxC,wDAAwD;EACxD,mBAAmB;EACnB,gBAAgB;;EAEhB;GACC,UAAU;GACV,eAAe;GACf,sCAAsC;GACtC,qBAAqB;GACrB,WAAW;GACX,oBAAoB;;GAEpB;IACC;KACC,uBAAuB;IACxB;GACD;;GAEA;IACC,0CAA0C;GAC3C;;GAEA;IACC,8CAA8C;GAC/C;;GAEA;IACC,mBAAmB;IACnB,iCAAiC;GAClC;EACD;;CAED;AACD",sourcesContent:["@layer asideMenu {\r\n	.asideMenu {\r\n		box-sizing: border-box;\r\n		width: 400px;\r\n		background-color: var(--n23-color-primary);\r\n		font-family: var(--n23-font-family);\r\n		height: 100vh;\r\n		padding: 50px;\r\n		overflow: auto;\r\n\r\n		/* hide scrollbar */\r\n		scrollbar-width: none;\r\n		-ms-overflow-style: none;\r\n		-webkit-overflow-scrolling: touch;\r\n		&::-webkit-scrollbar {\r\n			display: none;\r\n		}\r\n	}\r\n\r\n	.asideMenu ul {\r\n		all: unset;\r\n		list-style-type: none;\r\n	}\r\n\r\n	.asideMenu ul li {\r\n		font-size: var(--n23-font-size-big);\r\n		font-weight: var(--n23-font-weight-bold);\r\n		border-bottom: 1px solid var(--n23-color-font-asideMenu);\r\n		margin-bottom: 20px;\r\n		transition: 0.2s;\r\n\r\n		& a {\r\n			all: unset;\r\n			cursor: pointer;\r\n			color: var(--n23-color-font-asideMenu);\r\n			display: inline-block;\r\n			width: 100%;\r\n			padding-bottom: 20px;\r\n\r\n			@media (hover: hover) and (pointer: fine) {\r\n				&:hover {\r\n					filter: brightness(85%);\r\n				}\r\n			}\r\n\r\n			&:active {\r\n				background-color: var(--n23-color-primary);\r\n			}\r\n\r\n			&:focus-visible {\r\n				outline: 2px solid var(--n23-color-on-primary);\r\n			}\r\n\r\n			&:disabled {\r\n				cursor: not-allowed;\r\n				background-color: var(--n23-grey);\r\n			}\r\n		}\r\n\r\n	}\r\n}\r\n"],sourceRoot:""}]),___CSS_LOADER_EXPORT___.locals={asideMenu:"index-module__asideMenu__irqSA"};let __WEBPACK_DEFAULT_EXPORT__=___CSS_LOADER_EXPORT___},"./node_modules/react/cjs/react-jsx-runtime.production.min.js":(__unused_webpack_module,exports,__webpack_require__)=>{/**
+`,"",{version:3,sources:["webpack://./src/stories/menuAside/index.module.css"],names:[],mappings:"AAAA;CACC;EACC,sBAAsB;EACtB,YAAY;EACZ,0CAA0C;EAC1C,mCAAmC;EACnC,aAAa;EACb,aAAa;EACb,cAAc;;EAEd,mBAAmB;EACnB,qBAAqB;EACrB,wBAAwB;EACxB,iCAAiC;EACjC;GACC,aAAa;EACd;;EAEA;GACC,aAAa;EACd;CACD;;CAEA;EACC,UAAU;EACV,qBAAqB;CACtB;;CAEA;EACC,mCAAmC;EACnC,wCAAwC;EACxC,wDAAwD;EACxD,mBAAmB;EACnB,oBAAoB;EACpB,gBAAgB;;EAEhB;GACC,UAAU;GACV,eAAe;GACf,sCAAsC;GACtC,qBAAqB;GACrB,WAAW;;GAEX;IACC;KACC,uBAAuB;IACxB;GACD;;GAEA;IACC,0CAA0C;IAC1C,wBAAwB;GACzB;;GAEA;IACC,8CAA8C;IAC9C,wBAAwB;GACzB;EACD;;CAED;AACD",sourcesContent:["@layer asideMenu {\r\n	.asideMenu {\r\n		box-sizing: border-box;\r\n		width: 400px;\r\n		background-color: var(--n23-color-primary);\r\n		font-family: var(--n23-font-family);\r\n		height: 100vh;\r\n		padding: 50px;\r\n		overflow: auto;\r\n\r\n		/* hide scrollbar */\r\n		scrollbar-width: none;\r\n		-ms-overflow-style: none;\r\n		-webkit-overflow-scrolling: touch;\r\n		&::-webkit-scrollbar {\r\n			display: none;\r\n		}\r\n\r\n		@media (max-width: 575.98px) {\r\n			display: none;\r\n		}\r\n	}\r\n\r\n	.asideMenu ul {\r\n		all: unset;\r\n		list-style-type: none;\r\n	}\r\n\r\n	.asideMenu ul li {\r\n		font-size: var(--n23-font-size-big);\r\n		font-weight: var(--n23-font-weight-bold);\r\n		border-bottom: 1px solid var(--n23-color-font-asideMenu);\r\n		margin-bottom: 20px;\r\n		padding-bottom: 20px;\r\n		transition: 0.2s;\r\n\r\n		& a {\r\n			all: unset;\r\n			cursor: pointer;\r\n			color: var(--n23-color-font-asideMenu);\r\n			display: inline-block;\r\n			width: 100%;\r\n\r\n			@media (hover: hover) and (pointer: fine) {\r\n				&:hover {\r\n					filter: brightness(85%);\r\n				}\r\n			}\r\n\r\n			&:active {\r\n				background-color: var(--n23-color-primary);\r\n				filter: brightness(100%);\r\n			}\r\n\r\n			&:focus-visible {\r\n				outline: 2px solid var(--n23-color-on-primary);\r\n				filter: brightness(100%);\r\n			}\r\n		}\r\n\r\n	}\r\n}\r\n"],sourceRoot:""}]),___CSS_LOADER_EXPORT___.locals={asideMenu:"index-module__asideMenu__irqSA"};let __WEBPACK_DEFAULT_EXPORT__=___CSS_LOADER_EXPORT___},"./node_modules/react/cjs/react-jsx-runtime.production.min.js":(__unused_webpack_module,exports,__webpack_require__)=>{/**
  * @license React
  * react-jsx-runtime.production.min.js
  *
@@ -68,4 +69,4 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */var f=__webpack_require__("./node_modules/react/index.js"),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};function q(c,a,g){var b,d={},e=null,h=null;for(b in void 0!==g&&(e=""+g),void 0!==a.key&&(e=""+a.key),void 0!==a.ref&&(h=a.ref),a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}exports.Fragment=l,exports.jsx=q,exports.jsxs=q},"./node_modules/react/jsx-runtime.js":(module,__unused_webpack_exports,__webpack_require__)=>{module.exports=__webpack_require__("./node_modules/react/cjs/react-jsx-runtime.production.min.js")}}]);
-//# sourceMappingURL=stories-menuAside-MenuAside-stories.a3dbc2c6.iframe.bundle.js.map
+//# sourceMappingURL=stories-menuAside-MenuAside-stories.5d5d1f9e.iframe.bundle.js.map
