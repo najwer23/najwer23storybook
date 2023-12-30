@@ -12,11 +12,11 @@ const preview: Preview = {
 		},
 		options: {
 			storySort: {
-				order: ["Getting Started", "Colors"],
+				order: ["Getting Started", "CSS variables"],
 			},
 		},
 		backgrounds: {
-			default: "twitter",
+			default: "--n23-color-surface",
 			values: [
 				{
 					name: "--n23-color-surface",

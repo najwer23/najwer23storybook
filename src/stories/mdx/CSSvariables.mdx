@@ -1,51 +1,39 @@
-import { Meta } from "@storybook/blocks";
+import { Meta } from '@storybook/blocks';
 
-<Meta title="Getting Started" />
+<Meta title="CSS variables" />
 
-# Design System (React.js) - Mariusz Najwer
-<br />
-<br />
+# CSS variables
 
-## Prerequisites
 ```
-"react": "18.2.0"
-"react-dom": "18.2.0"
-"typescript": "5.3.3"
-"storybook": "7.6.6"
-```
+:root {
+	--n23-color-primary: #7a2e44;
+	--n23-color-on-primary: #324186;
+	--n23-color-on-primary-active: #232F5C;
+	--n23-color-secondary: #6a288a;
+	--n23-color-on-secondary: #184a4e;
 
-## Install
+	--n23-color-surface: #e9ecef;
+	--n23-color-font: #161925;
 
-### yarn
-```
-yarn add najwer23storybook --dev
-```
+	--n23-color-error: #FF3333;
+	--n23-color-success: #1f5120;
+	--n23-color-warning: #424242;
 
-### npm
-```
-npm install najwer23storybook --save-dev
-```
+	--n23-grey: #4D4D4D;
 
-## Example
-```
-import { Button } from "najwer23storybook/lib/Button";
+	--n23-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
-export const Example = () => {
-	return <Button
-		kind="classic"
-		onClick={() => {}}
-		text="Button"
-	/>
+	--n23-font-weight-thiner: 200;
+	--n23-font-weight-thin: 400;
+	--n23-font-weight-normal: 600;
+	--n23-font-weight-bold: 900;
+
+	--n23-font-size-normal: 18px;
+	--n23-font-size-big: 22px;
+	--n23-font-size-small: 14px;
+
+	--n23-font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+		segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+		sans-serif;
 }
 ```
-
-## NPM
-[https://www.npmjs.com/package/najwer23storybook](https://www.npmjs.com/package/najwer23storybook)
-
-## Demo
-[https://najwer23.github.io/najwer23storybook/](https://najwer23.github.io/najwer23storybook/)
-
-## Github
-[https://github.com/najwer23/najwer23storybook](https://github.com/najwer23/najwer23storybook)
-
-
