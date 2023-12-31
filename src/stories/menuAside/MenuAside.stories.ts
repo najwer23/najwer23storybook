@@ -5,9 +5,6 @@ import { MenuAside } from "./MenuAside";
 const meta: Meta<typeof MenuAside> = {
 	title: "Example/MenuAside",
 	component: MenuAside,
-	parameters: {
-		layout: "centered",
-	},
 	tags: ["autodocs"],
 	argTypes: {},
 };
