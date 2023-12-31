@@ -1,5 +1,5 @@
 
-# Design System (React.js) - Mariusz Najwer
+# Design System for React.js - Mariusz Najwer
 
 This package offers a range of design system assets, including components, styles, and guidelines, to facilitate the development of consistent and user-friendly interfaces across various applications and platforms.
 
