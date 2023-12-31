@@ -1,14 +1,7 @@
 import styles from "./index.module.css"
+import { ButtonTypes } from "./index.types";
 
-interface Props {
-	onClick?: () => void;
-	text: any,
-	type: "button" | "reset" | "submit";
-	disabled?: boolean;
-	ariaLabel: string;
-}
-
-export const Button = ({ ariaLabel, type, text, disabled = false, ...props }: Props) => {
+export const Button = ({ ariaLabel, type, text, disabled = false, ...props }: ButtonTypes) => {
 	return (
 		<button
 			type={type}

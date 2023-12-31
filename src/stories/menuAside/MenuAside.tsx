@@ -2,23 +2,9 @@ import { Fragment, useEffect, useState } from "react";
 import { Button } from "../button";
 import styles from "./index.module.css"
 import { useWindowSize } from "../hooks/useWindowSize";
+import { MenuAsideType } from "./index.types";
 
-interface ItemLink {
-	itemLink: string,
-	itemLinkText: string,
-	itemLinkType: "hash" | "link" | "linkOut",
-}
-
-interface ItemGroup {
-	menuTitle: string,
-	items: ItemLink[]
-}
-
-interface Props {
-	menuItems: ItemGroup[][]
-}
-
-export const MenuAside = ({ menuItems }: Props) => {
+export const MenuAside = ({ menuItems }: MenuAsideType) => {
 	const [menuMobileOpen, setMenuMobileOpen] = useState<boolean>(false);
 	const [width] = useWindowSize();
 
