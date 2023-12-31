@@ -18,23 +18,39 @@ type Story = StoryObj<typeof meta>;
 export const Standard: Story = {
 	args: {
 		menuItems: [
-			{
-				itemLink: "sss",
-				itemLinkText: "text999",
-				itemLinkType: "hash",
-			},
-			{
-				itemLink: "sss",
-				itemLinkText: "text9997",
-				itemLinkType: "hash",
-			},
-			{
-				itemLink: "link",
-				itemLinkText: "Link",
-				itemLinkType: "link",
-			},
+			[
+				{
+					menuTitle: "project",
+					items: [
+						{
+							itemLink: "sss",
+							itemLinkText: "text1",
+							itemLinkType: "hash",
+						},
+						{
+							itemLink: "sss",
+							itemLinkText: "text2",
+							itemLinkType: "hash",
+						},
+					],
+				},
+				{
+					menuTitle: "project 2",
+					items: [
+						{
+							itemLink: "sss",
+							itemLinkText: "text21",
+							itemLinkType: "hash",
+						},
+						{
+							itemLink: "sss",
+							itemLinkText: "text22",
+							itemLinkType: "hash",
+						},
+					],
+				},
+			],
 		],
-		menuTitle: "Projects",
 	},
 };
 

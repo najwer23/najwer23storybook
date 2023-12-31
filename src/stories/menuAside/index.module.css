@@ -8,9 +8,6 @@
 		}
 	}
 
-
-
-
 	.asideMenu {
 		box-sizing: border-box;
 		width: 400px;
@@ -70,10 +67,11 @@
 				}
 			}
 		}
+
+		ul li:last-child {
+			margin-bottom: 100px;
+		}
 	}
-
-
-
 
 	.asideMenuMobile {
 		display: none;
@@ -86,6 +84,10 @@
 		overflow: auto;
 		position: fixed;
 		z-index: 8;
+
+		@media (min-width: 576px) {
+			padding: 100px 50px 150px 50px;
+		}
 
 		& ul {
 			all: unset;
@@ -117,16 +119,16 @@
 			}
 		}
 
+		ul li:last-child {
+			margin-bottom: 100px;
+		}
+
 		@media (max-width: 1199.98px) {
 			&.open {
 				display: block;
 			}
 		}
 	}
-
-
-
-
 
 	.asideMenuMobileButton {
 		display: none;
@@ -147,10 +149,6 @@
 		overflow: hidden;
 	}
 
-
-
-
-
 	.asideMenuTitle {
 		font-family: var(--n23-font-family);
 		font-size: var(--n23-font-size-bigger);
@@ -158,5 +156,7 @@
 		color: var(--n23-color-font-asideMenu);
 		margin-bottom: 40px;
 		letter-spacing: 4px;
+		text-transform: uppercase;
+		word-spacing: 8px;
 	}
 }

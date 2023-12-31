@@ -1,10 +1,14 @@
-interface Props {
-    menuItems: {
-        itemLink: string;
-        itemLinkText: string;
-        itemLinkType: "hash" | "link" | "linkOut";
-    }[];
-    menuTitle: string;
+interface ItemLink {
+    itemLink: string;
+    itemLinkText: string;
+    itemLinkType: "hash" | "link" | "linkOut";
 }
-export declare const MenuAside: ({ menuItems, menuTitle }: Props) => import("react/jsx-runtime").JSX.Element;
+interface ItemGroup {
+    menuTitle: string;
+    items: ItemLink[];
+}
+interface Props {
+    menuItems: ItemGroup[][];
+}
+export declare const MenuAside: ({ menuItems }: Props) => import("react/jsx-runtime").JSX.Element;
 export {};

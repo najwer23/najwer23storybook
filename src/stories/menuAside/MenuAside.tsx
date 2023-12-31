@@ -1,18 +1,24 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Button } from "../button";
 import styles from "./index.module.css"
 import { useWindowSize } from "../hooks/useWindowSize";
 
-interface Props {
-	menuItems: {
-		itemLink: string;
-		itemLinkText: string;
-		itemLinkType: "hash" | "link" | "linkOut"
-	}[];
-	menuTitle: string
+interface ItemLink {
+	itemLink: string,
+	itemLinkText: string,
+	itemLinkType: "hash" | "link" | "linkOut",
 }
 
-export const MenuAside = ({ menuItems, menuTitle }: Props) => {
+interface ItemGroup {
+	menuTitle: string,
+	items: ItemLink[]
+}
+
+interface Props {
+	menuItems: ItemGroup[][]
+}
+
+export const MenuAside = ({ menuItems }: Props) => {
 	const [menuMobileOpen, setMenuMobileOpen] = useState<boolean>(false);
 	const [width] = useWindowSize();
 
@@ -38,42 +44,43 @@ export const MenuAside = ({ menuItems, menuTitle }: Props) => {
 			<div className={[styles["asideMenuWrapper"]].join(' ')}>
 				<div className={[styles["asideMenu"]].join(' ')}>
 
-					<div className={styles["asideMenuTitle"]}>
-						{menuTitle}
-					</div>
-
-					<ul>
-						{menuItems && (menuItems.map(({ itemLink, itemLinkText, itemLinkType }) => (
-							<li key={`desktopMenu${itemLinkText}`}>
-								{itemLinkType === "hash" && <a href={`/#/${itemLink}`}> {itemLinkText}</a>}
-								{itemLinkType === "link" && <a href={`/${itemLink}`}> {itemLinkText}</a>}
-								{itemLinkType === "linkOut" && <a target="_blank" rel="noopener noreferrer" href={`${itemLink}`}> {itemLinkText}</a>}
-							</li>
-						))
-						)}
-					</ul>
+					{menuItems && (menuItems.map((menuItem) => (
+						menuItem.map((itemGroup) => (
+							<Fragment key={`desktop${itemGroup.menuTitle}`}>
+								<div className={styles["asideMenuTitle"]}>{itemGroup.menuTitle}</div>
+								<ul>
+									{itemGroup.items.map(({ itemLinkText, itemLink, itemLinkType }) => (
+										<li key={`desktopMenu-${itemGroup.menuTitle}-${itemLinkText}`}>
+											{itemLinkType === "hash" && <a href={`/#/${itemLink}`}> {itemLinkText}</a>}
+											{itemLinkType === "link" && <a href={`/${itemLink}`}> {itemLinkText}</a>}
+											{itemLinkType === "linkOut" && <a target="_blank" rel="noopener noreferrer" href={`${itemLink}`}> {itemLinkText}</a>}
+										</li>
+									))}
+								</ul>
+							</Fragment>
+						)))))}
 				</div>
 			</div>
 
-
 			{/* Mobile */}
 			<div className={[styles["asideMenuMobile"], menuMobileOpen && styles["open"]].join(' ')}>
-
-				<div className={styles["asideMenuTitle"]}>
-					{menuTitle}
-				</div>
-
-				<ul>
-					{menuItems && (menuItems.map(({ itemLink, itemLinkText, itemLinkType }) => (
-						<li key={`mobileMenu${itemLinkText}`} onClick={() => {
-							setMenuMobileOpen(false)
-						}}>
-							{itemLinkType === "hash" && <a href={`/#/${itemLink}`}> {itemLinkText}</a>}
-							{itemLinkType === "link" && <a href={`/${itemLink}`}> {itemLinkText}</a>}
-							{itemLinkType === "linkOut" && <a target="_blank" rel="noopener noreferrer" href={`${itemLink}`}> {itemLinkText}</a>}
-						</li>
-					)))}
-				</ul>
+				{menuItems && (menuItems.map((menuItem) => (
+					menuItem.map((itemGroup) => (
+						<Fragment key={`mobile${itemGroup.menuTitle}`}>
+							<div className={styles["asideMenuTitle"]}>{itemGroup.menuTitle}</div>
+							<ul>
+								{itemGroup.items.map(({ itemLinkText, itemLink, itemLinkType }) => (
+									<li key={`MobileMenu-${itemGroup.menuTitle}-${itemLinkText}`} onClick={() => {
+										setMenuMobileOpen(false)
+									}}>
+										{itemLinkType === "hash" && <a href={`/#/${itemLink}`}> {itemLinkText}</a>}
+										{itemLinkType === "link" && <a href={`/${itemLink}`}> {itemLinkText}</a>}
+										{itemLinkType === "linkOut" && <a target="_blank" rel="noopener noreferrer" href={`${itemLink}`}> {itemLinkText}</a>}
+									</li>
+								))}
+							</ul>
+						</Fragment>
+					)))))}
 			</div>
 
 			{/* Button */}
