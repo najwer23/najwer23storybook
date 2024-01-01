@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Input } from './Input';
 
 const meta: Meta<typeof Input> = {
-	title: "Example/Input",
+	title: "Inputs/Input",
 	component: Input,
 	parameters: {
 		layout: "centered",
@@ -18,13 +18,11 @@ type Story = StoryObj<typeof meta>;
 
 
 
-export const TypeText: Story = {
+export const InputText: Story = {
 	args: {
-		name: "text77",
+		name: "mylabel",
 		type: "text",
-		label: "Uuuu Label",
-		placeholder: "tttt",
-		defaultValue: "88",
+		label: "Label",
 		onBlur: (e, isError) => console.log(e.target.value, isError),
 		errorOptions: {
 			empty: true,
@@ -33,17 +31,44 @@ export const TypeText: Story = {
 };
 
 
-export const TypeEmail: Story = {
+export const InputEmail: Story = {
 	args: {
-		name: "text77",
+		name: "mylabel",
 		type: "text",
-		label: "Uuuu Label",
-		placeholder: "tttt",
-		defaultValue: "88",
+		label: "Label",
+		placeholder: "Placeholder",
 		onBlur: (e, isError) => console.log(e.target.value, isError),
 		errorOptions: {
 			empty: true,
 			email: true,
+		},
+	},
+};
+
+
+export const InputDefaultValue: Story = {
+	args: {
+		name: "mylabel",
+		type: "text",
+		label: "Label",
+		defaultValue: "@najwer23",
+		onBlur: (e, isError) => console.log(e.target.value, isError),
+		errorOptions: {
+			empty: true,
+		},
+	},
+};
+
+
+export const InputErrorInput: Story = {
+	args: {
+		name: "mylabel",
+		type: "text",
+		label: "Label - Error on blur",
+		defaultValue: "",
+		onBlur: (e, isError) => console.log(e.target.value, isError),
+		errorOptions: {
+			empty: true,
 		},
 	},
 };

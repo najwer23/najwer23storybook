@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { MenuAside } from "./MenuAside";
 
 const meta: Meta<typeof MenuAside> = {
-	title: "Example/MenuAside",
+	title: "Menu/MenuAside",
 	component: MenuAside,
 	tags: ["autodocs"],
 	argTypes: {},
@@ -12,36 +12,36 @@ const meta: Meta<typeof MenuAside> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Standard: Story = {
+export const MenuLeftAside: Story = {
 	args: {
 		menuItems: [
 			[
 				{
-					menuTitle: "project",
+					menuTitle: "Menu",
 					items: [
 						{
-							itemLink: "sss",
-							itemLinkText: "text1",
+							itemLink: "link1",
+							itemLinkText: "link1",
 							itemLinkType: "hash",
 						},
 						{
-							itemLink: "sss",
-							itemLinkText: "text2",
+							itemLink: "link2",
+							itemLinkText: "link2",
 							itemLinkType: "hash",
 						},
 					],
 				},
 				{
-					menuTitle: "project 2",
+					menuTitle: "Projects",
 					items: [
 						{
-							itemLink: "sss",
-							itemLinkText: "text21",
+							itemLink: "link1",
+							itemLinkText: "link1",
 							itemLinkType: "hash",
 						},
 						{
-							itemLink: "sss",
-							itemLinkText: "text22",
+							itemLink: "link2",
+							itemLinkText: "link2",
 							itemLinkType: "hash",
 						},
 					],

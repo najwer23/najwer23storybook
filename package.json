@@ -1,6 +1,6 @@
 {
 	"name": "najwer23storybook",
-	"version": "3.0.35",
+	"version": "3.0.36",
 	"main": "lib/index.js",
 	"module": "lib/index.esm.js",
 	"types": "lib/index.d.ts",
@@ -14,7 +14,7 @@
 		"pub": "npm version patch --force && npm publish",
 		"pub-minor": "npm version minor --force && npm publish",
 		"pub-major": "npm version major --force && npm publish",
-		"god": "yarn build && yarn pub && yarn deploy && rimraf ./lib"
+		"god": "yarn build && yarn pub && yarn deploy && rimraf ./lib && rimraf ./storybook-static && rimraf ./.yarn/cache"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.23.7",
