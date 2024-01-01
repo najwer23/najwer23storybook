@@ -1,6 +1,6 @@
 {
 	"name": "najwer23storybook",
-	"version": "3.0.34",
+	"version": "3.0.35",
 	"main": "lib/index.js",
 	"module": "lib/index.esm.js",
 	"types": "lib/index.d.ts",
@@ -14,7 +14,7 @@
 		"pub": "npm version patch --force && npm publish",
 		"pub-minor": "npm version minor --force && npm publish",
 		"pub-major": "npm version major --force && npm publish",
-		"god": "yarn build && yarn pub && yarn deploy"
+		"god": "yarn build && yarn pub && yarn deploy && rimraf ./lib"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.23.7",
@@ -37,6 +37,7 @@
 		"postcss": "^8.4.32",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"rimraf": "^5.0.5",
 		"rollup": "^4.9.2",
 		"rollup-plugin-delete": "^2.0.0",
 		"rollup-plugin-dts": "^6.1.0",
