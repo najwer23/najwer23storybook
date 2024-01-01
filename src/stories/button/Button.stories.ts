@@ -16,7 +16,7 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Standard: Story = {
+export const TypeButton: Story = {
 	args: {
 		text: "Button",
 		type: "button",
@@ -24,12 +24,21 @@ export const Standard: Story = {
 	},
 };
 
-export const Disabled: Story = {
+export const TypeDisabled: Story = {
 	args: {
 		text: "Button",
 		type: "button",
 		disabled: true,
 		ariaLabel: "button-click"
+	},
+};
+
+export const TypeReset: Story = {
+	args: {
+		text: "Button",
+		type: "reset",
+		disabled: false,
+		ariaLabel: "button-click",
 	},
 };
 
