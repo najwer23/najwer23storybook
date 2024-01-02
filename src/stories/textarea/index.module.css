@@ -27,6 +27,7 @@
 			font-size: var(--n23-font-size-normal);
 			min-width: 100%;
 			resize: vertical;
+			border: 1px solid var(--n23-color-font)
 		}
 
 		& ::placeholder {
