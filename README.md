@@ -30,10 +30,10 @@ This package offers a range of design system assets, including components, style
 
 # Prerequisites
 ```js
-"react": "^18.2.0",
+"react": "^18.2.0"
 "react-dom": "^18.2.0"
 "typescript": "^5.3.3"
-"storybook": "^7.6.7",
+"storybook": "^7.6.7"
 ```
 
 # Install
