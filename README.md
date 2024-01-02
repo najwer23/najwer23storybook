@@ -45,7 +45,7 @@ npm install najwer23storybook --save-dev
 ```
 
 # Example
-```js
+```typescript
 import { Button } from "najwer23storybook/lib/Button";
 
 export const Example = () => {
@@ -57,3 +57,7 @@ export const Example = () => {
 	/>
 }
 ```
+
+# Author
+
+Mariusz Najwer
