@@ -1,7 +1,13 @@
 {
 	"name": "najwer23storybook",
-	"version": "3.1.28",
+	"version": "3.1.29",
 	"main": "lib/index.js",
+	"exports": {
+		".": {
+			"import": "./lib/index.js",
+			"require": "./lib/index.js"
+		}
+	},
 	"module": "lib/index.esm.js",
 	"types": "lib/index.d.ts",
 	"author": "Mariusz Najwer (https://najwer23.github.io/)",
