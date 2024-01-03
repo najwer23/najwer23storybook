@@ -1,6 +1,6 @@
 {
 	"name": "najwer23storybook",
-	"version": "3.1.39",
+	"version": "3.1.40",
 	"main": "lib/index.js",
 	"module": "lib/index.esm.js",
 	"types": "lib/index.d.ts",
@@ -43,8 +43,10 @@
 		"rollup-plugin-dts": "^6.1.0",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-postcss": "^4.0.2",
+		"rollup-plugin-typescript2": "^0.36.0",
 		"storybook": "^7.6.7",
 		"storybook-css-modules-preset": "^1.1.1",
+		"tslib": "^2.6.2",
 		"typescript": "^5.3.3"
 	},
 	"peerDependencies": {
