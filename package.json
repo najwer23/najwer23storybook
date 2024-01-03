@@ -1,15 +1,15 @@
 {
 	"name": "najwer23storybook",
-	"version": "3.1.42",
-	"main": "lib/index.ts",
-	"module": "lib/index.ts",
+	"version": "3.1.40",
+	"main": "lib/index.js",
+	"module": "lib/index.esm.js",
 	"types": "lib/index.d.ts",
 	"author": "Mariusz Najwer (https://najwer23.github.io/)",
 	"homepage": "https://najwer23.github.io/najwer23storybook",
 	"scripts": {
 		"deploy": "yarn run build-storybook && gh-pages -d storybook-static",
 		"start": "storybook dev -p 6006",
-		"build": "rimraf ./lib && rollup -c",
+		"build": "rimraf ./lib && rollup -c ",
 		"build-storybook": "storybook build",
 		"pub": "npm version patch --force && npm publish",
 		"pub-minor": "npm version minor --force && npm publish",
@@ -43,10 +43,9 @@
 		"rollup-plugin-dts": "^6.1.0",
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-postcss": "^4.0.2",
-		"rollup-plugin-typescript2": "^0.36.0",
+		"rollup-plugin-ts": "^3.4.5",
 		"storybook": "^7.6.7",
 		"storybook-css-modules-preset": "^1.1.1",
-		"tslib": "^2.6.2",
 		"typescript": "^5.3.3"
 	},
 	"peerDependencies": {
