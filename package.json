@@ -1,6 +1,6 @@
 {
 	"name": "najwer23storybook",
-	"version": "3.1.18",
+	"version": "3.1.19",
 	"main": "lib/index.js",
 	"module": "lib/index.esm.js",
 	"types": "lib/index.d.ts",
@@ -9,7 +9,7 @@
 	"scripts": {
 		"deploy": "yarn run build-storybook && gh-pages -d storybook-static",
 		"start": "storybook dev -p 6006",
-		"build": "rollup -c",
+		"build": "rimraf ./lib && rollup -c",
 		"build-storybook": "storybook build",
 		"pub": "npm version patch --force && npm publish",
 		"pub-minor": "npm version minor --force && npm publish",
