@@ -1,12 +1,11 @@
 {
 	"name": "najwer23storybook",
-	"version": "3.2.7",
+	"version": "3.2.8",
 	"main": "lib/index.js",
 	"module": "lib/index.esm.js",
 	"types": "lib/index.d.ts",
 	"author": "Mariusz Najwer (https://najwer23.github.io/)",
 	"homepage": "https://najwer23.github.io/najwer23storybook",
-	"sideEffects": true,
 	"scripts": {
 		"deploy": "yarn run build-storybook && gh-pages -d storybook-static",
 		"start": "storybook dev -p 6006",
