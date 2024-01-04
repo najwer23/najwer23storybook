@@ -4,8 +4,8 @@
 	"main": "./lib/index.js",
 	"module": "./lib/index.esm.js",
 	"exports": {
-		"require": "./lib",
-		"import": "./lib"
+		"require": "./lib/index.js",
+		"import": "./lib/index.esm.js"
 	},
 	"types": "./lib/index.d.ts",
 	"author": "Mariusz Najwer (https://najwer23.github.io/)",
