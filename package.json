@@ -1,6 +1,6 @@
 {
 	"name": "najwer23storybook",
-	"version": "3.2.28",
+	"version": "3.2.29",
 	"main": "./lib/index.js",
 	"module": "./lib/index.esm.js",
 	"types": "./lib/index.d.ts",
@@ -54,7 +54,10 @@
 		"design-system",
 		"gh-pages",
 		"typescript",
-		"rollup"
+		"rollup",
+		"tree shaking",
+		"webpack5",
+		"css modules"
 	],
 	"repository": {
 		"type": "git",
