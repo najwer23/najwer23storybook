@@ -34,7 +34,7 @@ export const CarouselStandardSmallerChild: Story = {
 		arrowRightIcon: <div>R</div>,
 		children: <>
 			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>1</div>
-			<div style={{ width: "250px", height: "400px", margin: "2rem", background: "green" }}>2</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>2</div>
 			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>3</div>
 			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>4</div>
 			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>5</div>

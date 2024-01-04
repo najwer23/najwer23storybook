@@ -10,12 +10,9 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselTy
 	const [showArrowRight, setShowArrowRight] = useState<boolean>(false)
 	const [width] = useWindowSize();
 
-	// const getChildWidth = () => {
-	// 	return carouselRef.current?.offsetWidth / (carouselRef.current?.childNodes.length - 2);
-	// }
-
-	// console.log(getChildWidth())
-
+	const getChildWidth = () => {
+		return carouselRef.current?.scrollWidth / (carouselRef.current?.childNodes.length - 2);
+	}
 
 	// check if show right arrow
 	useEffect(() => {
@@ -27,11 +24,11 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselTy
 	}, [width]);
 
 	const slideLeft = () => {
-		carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth
+		carouselRef.current.scrollLeft -= Math.floor(carouselRef.current.offsetWidth / getChildWidth()) * getChildWidth()
 	}
 
 	const slideRight = () => {
-		carouselRef.current.scrollLeft += carouselRef.current.offsetWidth
+		carouselRef.current.scrollLeft += Math.floor(carouselRef.current.offsetWidth / getChildWidth()) * getChildWidth()
 	}
 
 	const handleScroll = () => {
