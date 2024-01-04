@@ -1,20 +1,20 @@
 {
 	"name": "najwer23storybook",
-	"version": "4.0.1",
+	"version": "4.0.2",
 	"main": "./lib/index.js",
 	"module": "./lib/index.esm.js",
 	"types": "./lib/index.d.ts",
 	"author": "Mariusz Najwer (https://najwer23.github.io/)",
 	"homepage": "https://najwer23.github.io/najwer23storybook",
 	"scripts": {
-		"deploy": "yarn run build-storybook && gh-pages -d storybook-static",
+		"deploy": "yarn run build-storybook && gh-pages -d storybook-static && rimraf ./storybook-static ",
 		"start": "storybook dev -p 6006",
 		"build": "rimraf ./lib && rollup -c ",
 		"build-storybook": "storybook build",
 		"pub": "npm version patch --force && npm publish",
 		"pub-minor": "npm version minor --force && npm publish",
 		"pub-major": "npm version major --force && npm publish",
-		"god": "yarn build && yarn pub && rimraf ./lib && rimraf ./storybook-static && rimraf ./.yarn/cache"
+		"god": "yarn build && yarn pub && rimraf ./lib && rimraf ./.yarn/cache"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.23.7",
