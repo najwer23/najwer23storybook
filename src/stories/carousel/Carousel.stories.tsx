@@ -28,3 +28,25 @@ export const CarouselStandard: Story = {
 };
 
 
+export const CarouselStandardSmallerChild: Story = {
+	args: {
+		arrowLeftIcon: <div>L</div>,
+		arrowRightIcon: <div>R</div>,
+		children: <>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>1</div>
+			<div style={{ width: "250px", height: "400px", margin: "2rem", background: "green" }}>2</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>3</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>4</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>5</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>6</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>7</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>8</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>9</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>10</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>11</div>
+			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>12</div>
+		</>,
+	},
+
+};
+

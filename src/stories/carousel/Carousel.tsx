@@ -10,6 +10,13 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselTy
 	const [showArrowRight, setShowArrowRight] = useState<boolean>(false)
 	const [width] = useWindowSize();
 
+	// const getChildWidth = () => {
+	// 	return carouselRef.current?.offsetWidth / (carouselRef.current?.childNodes.length - 2);
+	// }
+
+	// console.log(getChildWidth())
+
+
 	// check if show right arrow
 	useEffect(() => {
 		let timerId = setTimeout(() => {
