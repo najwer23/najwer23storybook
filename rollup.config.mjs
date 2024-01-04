@@ -51,6 +51,7 @@ export default {
 		postcss({
 			extensions: [".css"],
 			minimize: true,
+			modules: true
 		}),
 		terser(),
 	],
