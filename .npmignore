@@ -6,7 +6,6 @@ src/*
 .storybook/*
 rollup.config.mjs
 tsconfig.json
-lib/stories/*
 public/img/f.png
 public/index.html
 storybook-static

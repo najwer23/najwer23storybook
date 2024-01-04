@@ -4,23 +4,24 @@ import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 
+// import { Button } from "najwer23storybook/lib/Button";
+// https://rollupjs.org/configuration-options/
 // https://prateeksurana.me/blog/react-component-library-using-storybook-7/
-// import { Button } from "najwer23storybook/lib/index";
 
 import * as fs from "fs";
 
-const getFiles = (dir, files_, query) => {
-	files_ = files_ || [];
-	var files = fs.readdirSync(dir);
-	for (var i in files) {
-		var name = dir + "/" + files[i];
+const getFiles = (dir, filesIn, query) => {
+	const files = filesIn || [];
+	const fsFiles = fs.readdirSync(dir);
+	for (var i in fsFiles) {
+		const name = dir + "/" + fsFiles[i];
 		if (fs.statSync(name).isDirectory()) {
-			getFiles(name, files_, query);
-		} else {
-			if (name.includes(query)) files_.push(name);
+			getFiles(name, files, query);
+		} else if (name.includes(query)) {
+			files.push(name);
 		}
 	}
-	return files_;
+	return files;
 };
 
 const filesIndexTs = getFiles("src/stories/", [], "index.ts").map(
@@ -33,6 +34,8 @@ const Input = Object.fromEntries(
 		`src/stories/${v}/index.ts`,
 	])
 );
+
+console.log(Input);
 
 export default {
 	input: Input,

@@ -23,7 +23,7 @@ npm install najwer23storybook --save-dev
 
 # Example
 ```typescript
-import { Button } from "najwer23storybook";
+import { Button } from "najwer23storybook/lib/Button";
 
 export const Example = () => {
 	return <Button
