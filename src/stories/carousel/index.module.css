@@ -1,4 +1,4 @@
-@layer carouel {
+@layer n23Carouel {
 	.carouselStyled {
 		display: flex;
 		gap: 60px;
