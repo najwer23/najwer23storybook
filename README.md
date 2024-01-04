@@ -3,7 +3,12 @@
 
 This package offers a range of design system assets, including components, styles, and guidelines, to facilitate the development of consistent and user-friendly interfaces across various applications and platforms.
 
-[<img src="https://img.icons8.com/color/96/npm.png">](https://www.npmjs.com/package/najwer23storybook) [<img src="https://img.icons8.com/clouds/100/domain.png">](https://najwer23.github.io/najwer23storybook/) [<img src="https://img.icons8.com/clouds/100/github.png">](https://github.com/najwer23/najwer23storybook)
+[<img src="https://img.icons8.com/color/96/npm.png">](https://www.npmjs.com/package/najwer23storybook) [<img src="https://img.icons8.com/clouds/100/domain.png">](https://najwer23.github.io/najwer23storybook/) [<img src="https://img.icons8.com/clouds/100/github.png">](https://github.com/najwer23/najwer23storybook) [<img src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/64/external-jsdelivr-a-free-fast-and-reliable-open-source-cdn-for-npm-and-github-logo-tritone-tal-revivo.png">](https://www.jsdelivr.com/?query=author%3A%20najwer23)
+
+
+
+
+
 
 # Prerequisites
 ```js
