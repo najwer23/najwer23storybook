@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "../button";
 import styles from "./index.module.css"
-import { useWindowSize } from "../hooks/useWindowSize";
+import { useWindowSize } from "../utils/hooks/useWindowSize";
 import { CarouselType } from "./index.types";
 
 export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselType): JSX.Element => {

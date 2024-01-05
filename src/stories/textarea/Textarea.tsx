@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { validator } from "../functions/validator";
+import { validator } from "../utils/functions/validator";
 import styles from "./index.module.css"
 import { TextareaTypes } from "./index.types";
 

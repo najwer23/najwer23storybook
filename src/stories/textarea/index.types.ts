@@ -1,4 +1,4 @@
-import { ErrorValidatorOptions } from "../functions/validator";
+import { ErrorValidatorOptions } from "../utils/functions/validator";
 
 export interface TextareaTypes {
 	name: string;

@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import { Button } from "../button";
 import styles from "./index.module.css"
-import { useWindowSize } from "../hooks/useWindowSize";
+import { useWindowSize } from "../utils/hooks/useWindowSize";
 import { MenuAsideType } from "./index.types";
 
 export const MenuAside = ({ menuItems }: MenuAsideType) => {
