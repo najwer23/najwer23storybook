@@ -1,0 +1,67 @@
+/* https://fluidtypography.com/ */
+
+@layer n23Text {
+	.pText {
+		& p {
+			text-wrap: balance;
+			max-width: 900px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+
+			font-family: var(--n23-font-family);
+			color: var(--n23-color-font);
+			font-weight: var(--n23-font-weight-normal);
+
+			font-size: clamp(1.125rem, 0.664vw + 0.953rem, 1.75rem);
+			line-height: clamp(1.688rem, 0.624vw + 1.526rem, 2.275rem);
+		}
+	}
+
+	.h1Text {
+		& h1 {
+			text-wrap: balance;
+			max-width: 900px;
+			margin-bottom: 15px;
+			margin-top: 15px;
+
+			font-family: var(--n23-font-family);
+			color: var(--n23-color-font);
+			font-weight: var(--n23-font-weight-bold);
+
+			font-size: clamp(3.25rem, 3.187vw + 2.425rem, 6.25rem);
+			line-height: clamp(3.575rem, 4.834vw + 2.324rem, 8.125rem);
+		}
+	}
+
+	.h2Text {
+		& h2 {
+			text-wrap: balance;
+			max-width: 900px;
+			margin-bottom: 15px;
+			margin-top: 15px;
+
+			font-family: var(--n23-font-family);
+			color: var(--n23-color-font);
+			font-weight: var(--n23-font-weight-bold);
+
+			font-size: clamp(3.75rem, 1.66vw + 3.32rem, 5.313rem);
+			line-height: clamp(5.625rem, 1.361vw + 5.273rem, 6.906rem);
+		}
+	}
+
+	.h3Text {
+		& h3 {
+			text-wrap: balance;
+			max-width: 900px;
+			margin-bottom: 15px;
+			margin-top: 15px;
+
+			font-family: var(--n23-font-family);
+			color: var(--n23-color-font);
+			font-weight: var(--n23-font-weight-bold);
+
+			font-size: clamp(1.875rem, 1.992vw + 1.36rem, 3.75rem);
+			line-height: clamp(2.813rem, 2.191vw + 2.246rem, 4.875rem);
+		}
+	}
+}

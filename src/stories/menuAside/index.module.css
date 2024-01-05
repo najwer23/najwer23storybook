@@ -17,6 +17,7 @@
 		padding: 50px;
 		overflow: auto;
 		position: fixed;
+		border-right: 3px solid var(--n23-color-font);
 
 		/* hide scrollbar */
 		scrollbar-width: none;
