@@ -1,0 +1,28 @@
+@layer n23TextMoving {
+	.marquee {
+		position: relative;
+		display: flex;
+		overflow: hidden;
+		user-select: none;
+		gap: 50px;
+		width: 100%;
+	}
+
+	.track {
+		flex-shrink: 0;
+		display: flex;
+		justify-content: space-around;
+		gap: 50px;
+		min-width: 100%;
+		animation: scroll 10s linear infinite;
+	}
+
+	@keyframes scroll {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(calc(-100% - 50px));
+		}
+	}
+}
