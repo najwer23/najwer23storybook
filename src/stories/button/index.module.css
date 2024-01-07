@@ -33,7 +33,7 @@
 
 		&:focus-visible {
 			outline: 2px solid var(--n23-color-on-primary);
-			background-color: var(--n23-grey);
+			background-color: var(--n23-color-on-primary);
 		}
 
 		&:disabled {
