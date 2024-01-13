@@ -7,6 +7,7 @@ const meta: Meta<typeof Footer> = {
 	component: Footer,
 	parameters: {
 		layout: "centered",
+		with: "500px"
 	},
 	tags: ["autodocs"],
 	argTypes: {
@@ -14,11 +15,10 @@ const meta: Meta<typeof Footer> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
+type Story = StoryObj<typeof meta>;
 export const FooterAlwaysOnBottom: Story = {
 	args: {
-
 	},
 };
 
