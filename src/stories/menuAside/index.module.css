@@ -13,6 +13,7 @@
 		width: 400px;
 		background-color: var(--n23-color-primary);
 		font-family: var(--n23-font-family);
+		box-shadow: var(--n23-shadow);
 		height: 100vh;
 		padding: 50px;
 		overflow: auto;
