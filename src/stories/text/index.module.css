@@ -11,7 +11,7 @@
 
 			font-family: var(--n23-font-family);
 			color: var(--n23-color-font);
-			font-weight: var(--n23-font-weight-normal);
+			font-weight: var(--n23-font-weight-thin);
 
 			font-size: clamp(1.125rem, 0.664vw + 0.953rem, 1.75rem);
 			line-height: clamp(1.688rem, 0.624vw + 1.526rem, 2.275rem);
