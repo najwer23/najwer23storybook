@@ -1,6 +1,6 @@
 {
 	"name": "najwer23storybook",
-	"version": "4.1.40",
+	"version": "4.1.41",
 	"main": "./lib/index.js",
 	"module": "./lib/index.esm.js",
 	"types": "./lib/index.d.ts",
@@ -57,12 +57,13 @@
 	"keywords": [
 		"react",
 		"storybook",
+		"storybook 8",
 		"design-system",
 		"gh-pages",
 		"typescript",
 		"rollup",
 		"tree shaking",
-		"webpack5",
+		"vite",
 		"css modules"
 	],
 	"repository": {
