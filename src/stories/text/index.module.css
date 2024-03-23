@@ -2,6 +2,41 @@
 /* 400 - 1920 */
 
 @layer n23Text {
+
+		.pSmallBoldText {
+		& p {
+			text-wrap: balance;
+			max-width: 900px;
+			margin-top: 8px;
+			margin-bottom: 8px;
+
+			font-family: var(--n23-font-family);
+			color: var(--n23-color-font);
+			font-weight: var(--n23-font-weight-bold);
+
+			font-size: clamp(0.75rem, 0.197vw + 0.701rem, 0.938rem);
+			line-height: clamp(0.825rem, 0.414vw + 0.721rem, 1.219rem);
+		}
+	}
+
+	/* 12 - 15 */
+	/* 1.1 - 1.3 */
+	.pSmallText {
+		& p {
+			text-wrap: balance;
+			max-width: 900px;
+			margin-top: 8px;
+			margin-bottom: 8px;
+
+			font-family: var(--n23-font-family);
+			color: var(--n23-color-font);
+			font-weight: var(--n23-font-weight-thin);
+
+			font-size: clamp(0.75rem, 0.197vw + 0.701rem, 0.938rem);
+			line-height: clamp(0.825rem, 0.414vw + 0.721rem, 1.219rem);
+		}
+	}
+
 	.pText {
 		& p {
 			text-wrap: balance;

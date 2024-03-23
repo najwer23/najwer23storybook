@@ -46,3 +46,19 @@ export const TextParagraph: Story = {
 	},
 };
 
+export const TextParagraphSmall: Story = {
+	args: {
+		kind: "pSmall",
+		children: testText
+	},
+};
+
+
+export const TextParagraphSmallBold: Story = {
+	args: {
+		kind: "pSmallBold",
+		children: testText
+	},
+};
+
+
