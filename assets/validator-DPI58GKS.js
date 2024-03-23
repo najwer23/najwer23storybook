@@ -1,0 +1,1 @@
+const c=(t,l)=>Object.keys(Object.fromEntries(Object.entries(l).filter(([,r])=>r))).map(r=>{let e;switch(r){case"empty":e=a(t);break;case"email":e=n(t);break;default:e=null}return e}).filter(r=>r!==null),a=t=>t.trim()===""||t.trim()===null?"The field cannot be empty":null,n=t=>/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/.test(t)?null:"Incorrect email address";export{c as v};
