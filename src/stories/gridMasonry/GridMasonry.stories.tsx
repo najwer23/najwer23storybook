@@ -41,8 +41,8 @@ export const Grid3columns: Story = {
 		col: {
 			smallDesktop: 3,
 			desktop: 3,
-			mobile: 3,
-			tablet: 3,
+			mobile: 1,
+			tablet: 2,
 		},
 		children: items
 	},
