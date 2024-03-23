@@ -14,8 +14,9 @@ This package offers a range of design system assets, including components, style
 ```js
 "react": "^18.2.0"
 "react-dom": "^18.2.0"
-"typescript": "^5.3.3"
-"storybook": "^7.6.7"
+"typescript": "^5.4.3"
+"storybook": "^8.0.4"
+"vite": "^5.2.0"
 ```
 
 # Install
