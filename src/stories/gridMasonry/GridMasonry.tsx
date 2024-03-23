@@ -86,7 +86,7 @@ export const GridMasonry = ({ children, gap, col }: GridMasonryTypes) => {
 				}))
 				setItemCnt(itemCnt => itemCnt + 1)
 			}
-		}, 0);
+		}, 50);
 
 		return () => clearTimeout(timeoutId);
 
