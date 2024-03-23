@@ -48,3 +48,23 @@ export const Grid3columns: Story = {
 	},
 };
 
+export const GridDynamicColumns: Story = {
+	args: {
+		gap: {
+			col: "20px",
+			row: "20px"
+		},
+		col: {
+			smallDesktop: 3,
+			desktop: 3,
+			mobile: 1,
+			tablet: 2,
+		},
+		children: [
+			<div>The best way to predict the future is to invent it.</div>,
+			<div>Stay hungry, stay foolish</div>,
+			<div>Growth and comfort do not coexist.</div>
+		]
+	},
+};
+
