@@ -1,0 +1,46 @@
+@layer n23GridMasonry {
+	.masonryContainer {
+		display: flex;
+		column-gap: var(--n23-m-fg-c);
+	}
+
+	.masonryContainer > * {
+		height: fit-content;
+	}
+
+	.masonryColumn {
+		width: calc(
+			(100% / var(--n23-m-flex-col)) -
+					(((var(--n23-m-flex-col) - 1) / var(--n23-m-flex-col)) * var(--n23-m-fg-c))
+		);
+
+	}
+
+	.masonryColumnChild {
+		margin-bottom: var(--n23-m-fg-r);
+	}
+
+	@media (max-width: 767.98px) {
+		.masonryColumn {
+			--n23-m-flex-col: var(--n23-m-fc-m);
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1199.98px) {
+		.masonryColumn {
+			--n23-m-flex-col: var(--n23-m-fc-t);
+		}
+	}
+
+	@media (min-width: 1200px) and (max-width: 1599.98px) {
+		.masonryColumn {
+			--n23-m-flex-col: var(--n23-m-fc-sd);
+		}
+	}
+
+	@media (min-width: 1600px) {
+		.masonryColumn {
+			--n23-m-flex-col: var(--n23-m-fc-d);
+		}
+	}
+}
