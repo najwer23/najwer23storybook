@@ -53,18 +53,17 @@
 
 				@media (hover: hover) and (pointer: fine) {
 					&:hover {
-						color: var(--n23-color-primary);
+						text-decoration: underline;
 					}
 				}
 
 				&:active {
 					/* background-color: var(--n23-color-primary); */
-					color: var(--n23-color-primary);
+					text-decoration: underline;
 				}
 
 				&:focus-visible {
-					outline: 2px solid var(--n23-color-primary);;
-					color: var(--n23-color-primary);
+					text-decoration: underline;
 				}
 			}
 		}
@@ -110,11 +109,11 @@
 				display: inline-block;
 
 				&:active {
-					color: var(--n23-color-primary);
+					text-decoration: underline;
 				}
 
 				&:focus-visible {
-					color: var(--n23-color-primary);
+					text-decoration: underline;
 				}
 			}
 		}
