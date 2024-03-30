@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-DRTy3Uxn.js";import{useMDXComponents as o}from"./index-z5U8iC57.js";import{M as i}from"./index-Sugce1Dy.js";import"./index-BBkUAzwr.js";import"./iframe-C1s4Zmjr.js";import"../sb-preview/runtime.js";import"./index-PqR-_bA4.js";import"./index-B_J8iUie.js";import"./index-DboEQVPH.js";import"./index-DrFu-skq.js";function e(r){const t={code:"code",h1:"h1",pre:"pre",...o(),...r.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"CSS variables"}),`
+import{j as n}from"./jsx-runtime-DRTy3Uxn.js";import{useMDXComponents as e}from"./index-z5U8iC57.js";import{M as i}from"./index-BTkNpUsq.js";import"./index-BBkUAzwr.js";import"./iframe-Dv9mcyvk.js";import"../sb-preview/runtime.js";import"./index-PqR-_bA4.js";import"./index-B_J8iUie.js";import"./index-DboEQVPH.js";import"./index-DrFu-skq.js";function o(r){const t={code:"code",h1:"h1",pre:"pre",...e(),...r.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"CSS variables"}),`
 `,n.jsx(t.h1,{id:"css-variables",children:"CSS variables"}),`
 `,n.jsx(t.pre,{children:n.jsx(t.code,{className:"language-css",children:`:root {\r
 	--n23-color-primary: #7a2e44;\r
@@ -9,8 +9,11 @@ import{j as n}from"./jsx-runtime-DRTy3Uxn.js";import{useMDXComponents as o}from"
 \r
 	--n23-color-surface: #e9ecef;\r
 	--n23-color-font: #161925;\r
-	--n23-color-font-asideMenu: #e9ecef;\r
 \r
+	--n23-asideMenu-background-color: #eee;\r
+	--n23-asideMenu-font-color: var(--n23-color-font);\r
+	--n23-asideMenu-mobile-background-color: #eee;\r
+	--n23-asideMenu-border-right-color: var(--n23-color-font);\r
 \r
 	--n23-color-error: #FF3333;\r
 	--n23-color-success: #1f5120;\r
@@ -46,4 +49,4 @@ import{j as n}from"./jsx-runtime-DRTy3Uxn.js";import{useMDXComponents as o}from"
 @media (min-width: 992px) and (max-width: 1199.98px) {}\r
 \r
 @media (min-width: 1200px) and (max-width: 1399.98px) {}
-`})})]})}function w(r={}){const{wrapper:t}={...o(),...r.components};return t?n.jsx(t,{...r,children:n.jsx(e,{...r})}):e(r)}export{w as default};
+`})})]})}function u(r={}){const{wrapper:t}={...e(),...r.components};return t?n.jsx(t,{...r,children:n.jsx(o,{...r})}):o(r)}export{u as default};
