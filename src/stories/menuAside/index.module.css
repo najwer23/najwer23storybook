@@ -53,18 +53,18 @@
 
 				@media (hover: hover) and (pointer: fine) {
 					&:hover {
-						filter: brightness(325%);
+						color: var(--n23-color-primary);
 					}
 				}
 
 				&:active {
 					/* background-color: var(--n23-color-primary); */
-					filter: brightness(325%);
+					color: var(--n23-color-primary);
 				}
 
 				&:focus-visible {
-					outline: 2px solid var(--n23-color-on-primary);
-					filter: brightness(325%);
+					outline: 2px solid var(--n23-color-primary);;
+					color: var(--n23-color-primary);
 				}
 			}
 		}
@@ -108,14 +108,13 @@
 				cursor: pointer;
 				color: var(--n23-asideMenu-font-color);
 				display: inline-block;
-				width: 100%;
 
 				&:active {
-					filter: brightness(325%);
+					color: var(--n23-color-primary);
 				}
 
 				&:focus-visible {
-					filter: brightness(325%);
+					color: var(--n23-color-primary);
 				}
 			}
 		}
