@@ -11,14 +11,14 @@
 	.asideMenu {
 		box-sizing: border-box;
 		width: 400px;
-		background-color: var(--n23-color-primary);
+		background-color: var(--n23-asideMenu-background-color);
 		font-family: var(--n23-font-family);
 		box-shadow: var(--n23-shadow);
 		height: 100vh;
 		padding: 50px;
 		overflow: auto;
 		position: fixed;
-		border-right: 3px solid var(--n23-color-font);
+		border-right: 5px solid var(--n23-asideMenu-border-right-color);
 
 		/* hide scrollbar */
 		scrollbar-width: none;
@@ -39,8 +39,8 @@
 
 		& ul li {
 			font-size: var(--n23-font-size-big);
-			font-weight: var(--n23-font-weight-bold);
-			border-bottom: 1px solid var(--n23-color-font-asideMenu);
+			font-weight: var(--n23-font-weight-normal);
+			border-bottom: 1px dashed var(--n23-asideMenu-font-color);
 			margin-bottom: 20px;
 			padding-bottom: 20px;
 			transition: 0.2s;
@@ -48,24 +48,23 @@
 			& a {
 				all: unset;
 				cursor: pointer;
-				color: var(--n23-color-font-asideMenu);
+				color: var(--n23-asideMenu-font-color);
 				display: inline-block;
-				width: 100%;
 
 				@media (hover: hover) and (pointer: fine) {
 					&:hover {
-						filter: brightness(125%);
+						filter: brightness(325%);
 					}
 				}
 
 				&:active {
-					background-color: var(--n23-color-primary);
-					filter: brightness(100%);
+					/* background-color: var(--n23-color-primary); */
+					filter: brightness(325%);
 				}
 
 				&:focus-visible {
 					outline: 2px solid var(--n23-color-on-primary);
-					filter: brightness(100%);
+					filter: brightness(325%);
 				}
 			}
 		}
@@ -79,7 +78,7 @@
 		display: none;
 		box-sizing: border-box;
 		width: 100vw;
-		background-color: var(--n23-color-on-secondary);
+		background-color: var(--n23-asideMenu-mobile-background-color);
 		font-family: var(--n23-font-family);
 		height: 100vh;
 		padding: 100px 20px 150px 20px;
@@ -107,16 +106,16 @@
 			& a {
 				all: unset;
 				cursor: pointer;
-				color: var(--n23-color-font-asideMenu);
+				color: var(--n23-asideMenu-font-color);
 				display: inline-block;
 				width: 100%;
 
 				&:active {
-					filter: brightness(85%);
+					filter: brightness(325%);
 				}
 
 				&:focus-visible {
-					filter: brightness(100%);
+					filter: brightness(325%);
 				}
 			}
 		}
@@ -155,7 +154,7 @@
 		font-family: var(--n23-font-family);
 		font-size: var(--n23-font-size-bigger);
 		font-weight: var(--n23-font-weight-bold);
-		color: var(--n23-color-font-asideMenu);
+		color: var(--n23-asideMenu-font-color);
 		margin-bottom: 40px;
 		letter-spacing: 4px;
 		text-transform: uppercase;

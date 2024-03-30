@@ -21,7 +21,7 @@ export const MenuLeftAside: Story = {
 					items: [
 						{
 							itemLink: "link1",
-							itemLinkText: "link1",
+							itemLinkText: "link1 link1 link1 link1 link1 link1 likn",
 							itemLinkType: "hash",
 						},
 						{
