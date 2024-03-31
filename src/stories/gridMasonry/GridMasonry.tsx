@@ -5,7 +5,7 @@ import { useWindowSize } from "../utils/hooks/useWindowSize";
 import { GridMasonryColumn } from "./GridMasonryColumn";
 import { ChildrenMasonry, GridMasonryTypes } from "./index.types";
 
-export const GridMasonry = ({ children, gap, col }: GridMasonryTypes) => {
+export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd }: GridMasonryTypes) => {
 	const [itemCnt, setItemCnt] = useState<number>(0)
 	const [width] = useWindowSize();
 
@@ -85,6 +85,12 @@ export const GridMasonry = ({ children, gap, col }: GridMasonryTypes) => {
 						: value;
 				}))
 				setItemCnt(itemCnt => itemCnt + 1)
+
+				if (itemCnt == (children.length-1)) {
+					if (onGridMasonryLoadEnd) {
+						onGridMasonryLoadEnd(true)
+					}
+				}
 			}
 		}, 40);
 
