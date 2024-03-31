@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-DRTy3Uxn.js";import{useMDXComponents as e}from"./index-z5U8iC57.js";import{M as i}from"./index-BTkNpUsq.js";import"./index-BBkUAzwr.js";import"./iframe-Dv9mcyvk.js";import"../sb-preview/runtime.js";import"./index-PqR-_bA4.js";import"./index-B_J8iUie.js";import"./index-DboEQVPH.js";import"./index-DrFu-skq.js";function o(r){const t={code:"code",h1:"h1",pre:"pre",...e(),...r.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"CSS variables"}),`
+import{j as n}from"./jsx-runtime-DRTy3Uxn.js";import{useMDXComponents as e}from"./index-z5U8iC57.js";import{M as i}from"./index-DhrwU35r.js";import"./index-BBkUAzwr.js";import"./iframe-CgRapnpG.js";import"../sb-preview/runtime.js";import"./index-PqR-_bA4.js";import"./index-B_J8iUie.js";import"./index-DboEQVPH.js";import"./index-DrFu-skq.js";function o(r){const t={code:"code",h1:"h1",pre:"pre",...e(),...r.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"CSS variables"}),`
 `,n.jsx(t.h1,{id:"css-variables",children:"CSS variables"}),`
 `,n.jsx(t.pre,{children:n.jsx(t.code,{className:"language-css",children:`:root {\r
 	--n23-color-primary: #7a2e44;\r
