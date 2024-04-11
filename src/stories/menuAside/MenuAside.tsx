@@ -56,11 +56,9 @@ export const MenuAside = ({ menuItems }: MenuAsideType) => {
 							<div className={styles["asideMenuTitle"]}>{itemGroup.menuTitle}</div>
 							<ul>
 								{itemGroup.items.map(({ itemLinkText, itemLink, itemLinkType }) => (
-									<li key={`MobileMenu-${itemGroup.menuTitle}-${itemLinkText}`} onClick={() => {
-										setMenuMobileOpen(false)
-									}}>
-										{itemLinkType === "hash" && <a href={`/#/${itemLink}`}> {itemLinkText}</a>}
-										{itemLinkType === "link" && <a href={`/${itemLink}`}> {itemLinkText}</a>}
+									<li key={`MobileMenu-${itemGroup.menuTitle}-${itemLinkText}`} >
+										{itemLinkType === "hash" && <a href={`/#/${itemLink}`} onClick={() => {setMenuMobileOpen(false)}} > {itemLinkText}</a>}
+										{itemLinkType === "link" && <a href={`/${itemLink}`} onClick={() => {setMenuMobileOpen(false)}}> {itemLinkText}</a>}
 										{itemLinkType === "linkOut" && <a target="_blank" rel="noopener noreferrer" href={`${itemLink}`}> {itemLinkText}</a>}
 									</li>
 								))}
