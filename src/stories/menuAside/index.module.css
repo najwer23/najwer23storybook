@@ -17,7 +17,8 @@
 		padding: 50px;
 		overflow: auto;
 		position: fixed;
-		border: 1px solid var(--n23-asideMenu-border-right-color);
+		border-left: 1px solid var(--n23-asideMenu-border-right-color);
+		border-right: 1px solid var(--n23-asideMenu-border-right-color);
 
 		/* hide scrollbar */
 		scrollbar-width: none;
