@@ -3,8 +3,9 @@ import { Button } from "../button";
 import styles from "./index.module.css"
 import { useWindowSize } from "../utils/hooks/useWindowSize";
 import { MenuAsideType } from "./index.types";
+import { Text } from "../text";
 
-export const MenuAside = ({ menuItems }: MenuAsideType) => {
+export const MenuAside = ({ menuItems, menuTitle }: MenuAsideType) => {
 	const [menuMobileOpen, setMenuMobileOpen] = useState<boolean>(false);
 	const [width] = useWindowSize();
 
@@ -29,6 +30,7 @@ export const MenuAside = ({ menuItems }: MenuAsideType) => {
 			{/* Desktop */}
 			<div className={[styles["asideMenuWrapper"]].join(' ')}>
 				<div className={[styles["asideMenu"]].join(' ')}>
+					<Text kind="h3"> {menuTitle} </Text>
 
 					{menuItems && (menuItems.map((menuItem) => (
 						menuItem.map((itemGroup) => (
@@ -50,6 +52,8 @@ export const MenuAside = ({ menuItems }: MenuAsideType) => {
 
 			{/* Mobile */}
 			<div className={[styles["asideMenuMobile"], menuMobileOpen && styles["open"]].join(' ')}>
+				<Text kind="h3"> {menuTitle} </Text>
+
 				{menuItems && (menuItems.map((menuItem) => (
 					menuItem.map((itemGroup) => (
 						<Fragment key={`mobile${itemGroup.menuTitle}`}>

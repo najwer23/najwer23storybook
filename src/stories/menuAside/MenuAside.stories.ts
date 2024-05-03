@@ -14,6 +14,7 @@ type Story = StoryObj<typeof meta>;
 
 export const MenuLeftAside: Story = {
 	args: {
+		menuTitle: "najwer23",
 		menuItems: [
 			[
 				{
