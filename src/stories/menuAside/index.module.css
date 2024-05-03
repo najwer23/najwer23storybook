@@ -75,6 +75,17 @@
 		}
 	}
 
+
+
+
+
+
+
+
+
+
+	/* MOBILE */
+
 	.asideMenuMobile {
 		display: none;
 		box-sizing: border-box;
@@ -109,8 +120,8 @@
 				cursor: pointer;
 				color: var(--n23-asideMenu-font-color);
 				display: inline-block;
-				padding-top: 10px;
-				padding-bottom: 10px;
+				padding-top: 5px;
+				padding-bottom: 5px;
 
 				&:active {
 					text-decoration: underline;
@@ -148,6 +159,13 @@
 		}
 	}
 
+
+
+
+
+
+	/* Others */
+
 	.menuOpen {
 		overflow: hidden;
 	}
@@ -157,11 +175,17 @@
 		font-size: var(--n23-font-size-bigger);
 		font-weight: var(--n23-font-weight-bold);
 		color: var(--n23-asideMenu-font-color);
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		letter-spacing: 4px;
 		text-transform: uppercase;
 		letter-spacing: 10px;
 		word-spacing: 8px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid var(--n23-asideMenu-font-color);
+
+		@media (max-width: 1199.98px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	* > .asideMenuTitleSpace {
@@ -178,6 +202,4 @@
 		font-weight: var(--n23-font-weight-bold);
 		line-height: 1;
 	}
-
-
 }
