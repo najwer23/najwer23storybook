@@ -14,7 +14,7 @@ type Story = StoryObj<typeof meta>;
 
 export const MenuLeftAside: Story = {
 	args: {
-		menuTitle: "najwer23",
+		menuTitle: "N",
 		menuItems: [
 			[
 				{
@@ -51,5 +51,46 @@ export const MenuLeftAside: Story = {
 		],
 	},
 };
+
+
+export const MenuLeftAsideWithoutLogo: Story = {
+	args: {
+		menuItems: [
+			[
+				{
+					menuTitle: "Menu",
+					items: [
+						{
+							itemLink: "link1",
+							itemLinkText: "link1 link1 link1 link1 link1 link1 likn",
+							itemLinkType: "hash",
+						},
+						{
+							itemLink: "link2",
+							itemLinkText: "link2",
+							itemLinkType: "hash",
+						},
+					],
+				},
+				{
+					menuTitle: "Projects",
+					items: [
+						{
+							itemLink: "link1",
+							itemLinkText: "link1",
+							itemLinkType: "hash",
+						},
+						{
+							itemLink: "link2",
+							itemLinkText: "link2",
+							itemLinkType: "hash",
+						},
+					],
+				},
+			],
+		],
+	},
+};
+
 
 

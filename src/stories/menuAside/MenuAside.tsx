@@ -28,14 +28,13 @@ export const MenuAside = ({ menuItems, menuTitle }: MenuAsideType) => {
 	return (
 		<>
 			{/* Desktop */}
-			<div className={[styles["asideMenuWrapper"]].join(' ')}>
-				<div className={[styles["asideMenu"]].join(' ')}>
-					<Text kind="h3"> {menuTitle} </Text>
-
+			<div className={styles["asideMenuWrapper"]}>
+				<div className={styles["asideMenu"]}>
+					<div className={styles["asideMenuLogo"]}> {menuTitle} </div>
 					{menuItems && (menuItems.map((menuItem) => (
 						menuItem.map((itemGroup) => (
 							<Fragment key={`desktop${itemGroup.menuTitle}`}>
-								<div className={styles["asideMenuTitle"]}>{itemGroup.menuTitle}</div>
+								<div className={[menuTitle && styles["asideMenuTitleSpace"], styles["asideMenuTitle"]].join(" ")}>{itemGroup.menuTitle}</div>
 								<ul>
 									{itemGroup.items.map(({ itemLinkText, itemLink, itemLinkType }) => (
 										<li key={`desktopMenu-${itemGroup.menuTitle}-${itemLinkText}`}>
@@ -52,12 +51,12 @@ export const MenuAside = ({ menuItems, menuTitle }: MenuAsideType) => {
 
 			{/* Mobile */}
 			<div className={[styles["asideMenuMobile"], menuMobileOpen && styles["open"]].join(' ')}>
-				<Text kind="h3"> {menuTitle} </Text>
+				<div className={styles["asideMenuLogo"]}> {menuTitle} </div>
 
 				{menuItems && (menuItems.map((menuItem) => (
 					menuItem.map((itemGroup) => (
 						<Fragment key={`mobile${itemGroup.menuTitle}`}>
-							<div className={styles["asideMenuTitle"]}>{itemGroup.menuTitle}</div>
+							<div className={[menuTitle && styles["asideMenuTitleSpace"], styles["asideMenuTitle"]].join(" ")}>{itemGroup.menuTitle}</div>
 							<ul>
 								{itemGroup.items.map(({ itemLinkText, itemLink, itemLinkType }) => (
 									<li key={`MobileMenu-${itemGroup.menuTitle}-${itemLinkText}`} >

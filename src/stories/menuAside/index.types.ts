@@ -11,5 +11,5 @@ interface ItemGroup {
 
 export interface MenuAsideType {
 	menuItems: ItemGroup[][];
-	menuTitle: string;
+	menuTitle?: string;
 }

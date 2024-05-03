@@ -164,12 +164,20 @@
 		word-spacing: 8px;
 	}
 
-	* > .asideMenuTitle {
+	* > .asideMenuTitleSpace {
     margin-top: 100px;
 	}
 
-	* > .asideMenuTitle ~ .asideMenuTitle {
+	* > .asideMenuTitleSpace ~ .asideMenuTitleSpace {
      margin-top: unset;
 	}
+
+	.asideMenuLogo {
+		font-family: var(--n23-font-family);
+		font-size: 120px;
+		font-weight: var(--n23-font-weight-bold);
+		margin-top: 0;
+	}
+
 
 }
