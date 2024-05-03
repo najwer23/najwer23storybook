@@ -12,11 +12,11 @@ This package offers a range of design system assets, including components, style
 
 # Prerequisites
 ```js
-"react": "^18.2.0"
-"react-dom": "^18.2.0"
-"typescript": "^5.4.3"
-"storybook": "^8.0.4"
-"vite": "^5.2.0"
+"react": "^18.3.1"
+"react-dom": "^18.3.1"
+"typescript": "^5.4.5"
+"storybook": "^8.0.9"
+"vite": "^5.2.11"
 ```
 
 # Install
