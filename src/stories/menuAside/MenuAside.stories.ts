@@ -20,6 +20,11 @@ const MENU_ASIDE: MenuAsideType = {
 				menuTitle: "Menu",
 				items: [
 					{
+						itemLink: "#",
+						itemLinkText: "Test",
+						itemLinkType: "hash",
+					},
+					{
 						itemLink: "",
 						itemLinkText: "Home",
 						itemLinkType: "hash",
