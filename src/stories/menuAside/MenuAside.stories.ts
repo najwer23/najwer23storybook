@@ -14,7 +14,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const MENU_ASIDE: MenuAsideType = {
-	menuTitle: "N",
 	menuItems: [
 		[
 			{
@@ -146,7 +145,8 @@ const MENU_ASIDE: MenuAsideType = {
 
 export const MenuLeftAside: Story = {
 	args: {
-		...MENU_ASIDE
+		menuTitle: "N",
+		...MENU_ASIDE,
 	},
 };
 
