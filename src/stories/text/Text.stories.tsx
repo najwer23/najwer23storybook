@@ -53,10 +53,16 @@ export const TextParagraphSmall: Story = {
 	},
 };
 
-
 export const TextParagraphSmallBold: Story = {
 	args: {
 		kind: "pSmallBold",
+		children: testText
+	},
+};
+
+export const TextParagraphSubTitle: Story = {
+	args: {
+		kind: "pSubTitle",
 		children: testText
 	},
 };
