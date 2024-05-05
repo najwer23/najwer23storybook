@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { GridMasonry } from './GridMasonry';
-import { ReactNode } from 'react';
 
 const meta: Meta<typeof GridMasonry> = {
 	title: "Grid-Masonry/GridMasonry",
