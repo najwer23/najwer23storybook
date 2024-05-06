@@ -1,6 +1,6 @@
 import { Children } from "react";
 import styles from "./index.module.css"
-import { P } from "./index.types";
+import { GridTypes } from "./index.types";
 
 export const Grid = ({
 	children,
