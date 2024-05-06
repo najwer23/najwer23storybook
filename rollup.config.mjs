@@ -42,7 +42,7 @@ export default {
 	output: {
 		dir: "lib",
 		format: "esm",
-		sourcemap: true,
+		// sourcemap: true,
 	},
 	plugins: [
 		peerDepsExternal(),
