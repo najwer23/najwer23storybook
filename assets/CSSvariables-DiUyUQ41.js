@@ -1,6 +1,9 @@
-import{j as n}from"./jsx-runtime-QvZ8i92b.js";import{useMDXComponents as e}from"./index-FeUjBnvO.js";import{M as i}from"./index-5-Mr5KDl.js";import"./index-uubelm5h.js";import"./iframe-BjtHGoX7.js";import"../sb-preview/runtime.js";import"./index-Dei0BBcc.js";import"./index-DYADbu9O.js";import"./index-BvbbFdN4.js";import"./index-DrFu-skq.js";function o(r){const t={code:"code",h1:"h1",pre:"pre",...e(),...r.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"MDX2CSSvariables"}),`
-`,n.jsx(t.h1,{id:"css-variables",children:"CSS variables"}),`
-`,n.jsx(t.pre,{children:n.jsx(t.code,{className:"language-css",children:`:root {\r
+import{j as n}from"./jsx-runtime-QvZ8i92b.js";import{useMDXComponents as e}from"./index-FeUjBnvO.js";import{M as i}from"./index-p4mPgz_F.js";import"./index-uubelm5h.js";import"./iframe-B5cZv8Ut.js";import"../sb-preview/runtime.js";import"./index-Dei0BBcc.js";import"./index-DYADbu9O.js";import"./index-BvbbFdN4.js";import"./index-DrFu-skq.js";function o(t){const r={blockquote:"blockquote",code:"code",h1:"h1",p:"p",pre:"pre",...e(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"CSSvariables"}),`
+`,n.jsx(r.h1,{id:"css-variables",children:"CSS variables"}),`
+`,n.jsxs(r.blockquote,{children:[`
+`,n.jsx(r.p,{children:"Colors are the smiles of nature."}),`
+`]}),`
+`,n.jsx(r.pre,{children:n.jsx(r.code,{className:"language-css",children:`:root {\r
 	--n23-color-primary: #7a2e44;\r
 	--n23-color-on-primary: #324186;\r
 	--n23-color-on-primary-active: #232F5C;\r
@@ -49,4 +52,4 @@ import{j as n}from"./jsx-runtime-QvZ8i92b.js";import{useMDXComponents as e}from"
 @media (min-width: 992px) and (max-width: 1199.98px) {}\r
 \r
 @media (min-width: 1200px) and (max-width: 1399.98px) {}
-`})})]})}function u(r={}){const{wrapper:t}={...e(),...r.components};return t?n.jsx(t,{...r,children:n.jsx(o,{...r})}):o(r)}export{u as default};
+`})})]})}function u(t={}){const{wrapper:r}={...e(),...t.components};return r?n.jsx(r,{...t,children:n.jsx(o,{...t})}):o(t)}export{u as default};

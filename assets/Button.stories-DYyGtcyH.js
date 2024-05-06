@@ -1,4 +1,4 @@
-import{B as d}from"./Button-BmVJkERK.js";import"./jsx-runtime-QvZ8i92b.js";import"./index-uubelm5h.js";const g={title:"Buttons/Button",component:d,parameters:{layout:"centered"},tags:["autodocs"],argTypes:{}},t={args:{text:"Button",type:"button",ariaLabel:"button-click"}},e={args:{text:"Button",type:"button",disabled:!0,ariaLabel:"button-click"}},a={args:{text:"Button",type:"reset",disabled:!1,ariaLabel:"button-click"}};var o,r,n;t.parameters={...t.parameters,docs:{...(o=t.parameters)==null?void 0:o.docs,source:{originalSource:`{
+import{B as d}from"./Button-DRYQn4j-.js";import"./jsx-runtime-QvZ8i92b.js";import"./index-uubelm5h.js";const g={title:"Buttons/Button",component:d,parameters:{layout:"centered"},tags:["autodocs"],argTypes:{}},t={args:{text:"Button",type:"button",ariaLabel:"button-click"}},e={args:{text:"Button",type:"button",disabled:!0,ariaLabel:"button-click"}},a={args:{text:"Button",type:"reset",disabled:!1,ariaLabel:"button-click"}};var o,r,n;t.parameters={...t.parameters,docs:{...(o=t.parameters)==null?void 0:o.docs,source:{originalSource:`{
   args: {
     text: "Button",
     type: "button",
