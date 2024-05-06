@@ -6,19 +6,6 @@ This package offers a range of design system assets, including components, style
 [<img src="https://img.icons8.com/color/96/npm.png">](https://www.npmjs.com/package/najwer23storybook) [<img src="https://img.icons8.com/clouds/100/domain.png">](https://najwer23.github.io/najwer23storybook/) [<img src="https://img.icons8.com/clouds/100/github.png">](https://github.com/najwer23/najwer23storybook) [<img  src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-jsdelivr-a-free-fast-and-reliable-open-source-cdn-for-npm-and-github-logo-color-tal-revivo.png">](https://www.jsdelivr.com/?query=author%3A%20najwer23)
 
 
-
-
-
-
-# Prerequisites
-```js
-"react": "^18.3.1"
-"react-dom": "^18.3.1"
-"typescript": "^5.4.5"
-"storybook": "^8.0.10"
-"vite": "^5.2.11"
-```
-
 # Install
 ```js
 yarn add najwer23storybook --dev
