@@ -36,9 +36,9 @@ export const Input = ({
 	}
 
 	return (
-		<div className={styles["inputWrapper"]}>
+		<div className={styles.inputWrapper}>
 
-			<div className={styles["inputLabel"]}>
+			<div className={styles.inputLabel}>
 				<label
 					htmlFor={name}
 				>
@@ -46,7 +46,7 @@ export const Input = ({
 				</label>
 			</div>
 
-			<div className={styles["inputInput"]}>
+			<div className={styles.inputInput}>
 				<input
 					ref={innerRef}
 					defaultValue={defaultValue}
@@ -60,7 +60,7 @@ export const Input = ({
 				/>
 			</div>
 
-			<div className={styles["inputError"]}>
+			<div className={styles.inputError}>
 				{validatorMsg && validatorMsg}
 			</div>
 

@@ -17,34 +17,18 @@ export const CarouselStandard: Story = {
 		arrowLeftIcon: <div>L</div>,
 		arrowRightIcon: <div>R</div>,
 		children: <>
-			<div style={{width: "500px", height: "400px", margin: "20px", background: "green"}}></div>
-			<div style={{width: "500px", height: "400px", margin: "20px", background: "red"}}></div>
-			<div style={{width: "500px", height: "400px", margin: "20px", background: "yellow"}}></div>
-			<div style={{width: "500px", height: "400px", margin: "20px", background: "blue"}}></div>
-			<div style={{width: "500px", height: "400px", margin: "20px", background: "grey"}}></div>
-		</>,
+			{Array.from({ length: 15 }, (_, i) => <img key={i} src="https://source.unsplash.com/random/500x700" height="700" width="500" alt="" />)}
+		</>
 	},
 
 };
-
 
 export const CarouselStandardSmallerChild: Story = {
 	args: {
 		arrowLeftIcon: <div>L</div>,
 		arrowRightIcon: <div>R</div>,
 		children: <>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>1</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>2</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>3</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>4</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>5</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>6</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>7</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>8</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>9</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>10</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>11</div>
-			<div style={{ width: "250px", height: "400px", margin: "20px", background: "green" }}>12</div>
+			{Array.from({ length: 10 }, (_, i) => <img key={i} src="https://source.unsplash.com/random/300x400" height="400" width="300" alt="" />)}
 		</>,
 	},
 

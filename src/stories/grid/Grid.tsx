@@ -1,6 +1,6 @@
 import { Children } from "react";
 import styles from "./index.module.css"
-import { GridTypes } from "./index.types";
+import { P } from "./index.types";
 
 export const Grid = ({
 	children,
@@ -12,7 +12,7 @@ export const Grid = ({
 	return (
 		<>
 			<div
-				className={styles["gridContainer"]}
+				className={styles.gridContainer}
 				style={
 					{
 						"--n23-fc-m": col.mobile,
@@ -25,7 +25,7 @@ export const Grid = ({
 			>
 				{
 					Children.map(children.props.children, (child:any) => (
-						<div className={styles["gridContainerChild"]}>{child}</div>
+						<div className={styles.gridContainerChild}>{child}</div>
 					))
 				}
 			</div>

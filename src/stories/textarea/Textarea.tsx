@@ -35,9 +35,9 @@ export const Textarea = ({
 	}
 
 	return (
-		<div className={styles["inputWrapper"]}>
+		<div className={styles.inputWrapper}>
 
-			<div className={styles["inputLabel"]}>
+			<div className={styles.inputLabel}>
 				<label
 					htmlFor={name}
 				>
@@ -45,7 +45,7 @@ export const Textarea = ({
 				</label>
 			</div>
 
-			<div className={styles["inputInput"]}>
+			<div className={styles.inputInput}>
 				<textarea
 					ref={innerRef}
 					defaultValue={defaultValue}
@@ -55,11 +55,11 @@ export const Textarea = ({
 					placeholder={placeholder}
 					readOnly={readonly}
 					{...props}
-					>
+				>
 				</textarea>
 			</div>
 
-			<div className={styles["inputError"]}>
+			<div className={styles.inputError}>
 				{validatorMsg && validatorMsg}
 			</div>
 

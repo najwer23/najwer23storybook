@@ -32,6 +32,7 @@ export const TextareaPlaceholder: Story = {
 	args: {
 		name: "mylabel",
 		label: "Label",
+		placeholder: "Placeholder",
 		onBlur: (e, isError) => console.log(e.target.value, isError),
 		errorOptions: {
 			empty: true,

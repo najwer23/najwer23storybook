@@ -5,7 +5,7 @@ export const Button = ({ ariaLabel, type, text, disabled = false, ...props }: Bu
 	return (
 		<button
 			type={type}
-			className={[styles["standard"]].join(' ')}
+			className={styles.standard}
 			disabled={disabled}
 			aria-label={ariaLabel}
 			{...props}

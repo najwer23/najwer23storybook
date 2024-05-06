@@ -99,7 +99,7 @@ export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd }: GridMa
 	}, [JSON.stringify(childrenMasonry.map(({ height }) => height))])
 
 	return (
-		<div className={styles["masonryContainer"]} style={
+		<div className={styles.masonryContainer} style={
 			{
 				"--n23-m-fc-m": col.mobile,
 				"--n23-m-fc-t": col.tablet,

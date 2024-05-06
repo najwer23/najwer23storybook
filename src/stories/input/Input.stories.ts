@@ -16,8 +16,6 @@ const meta: Meta<typeof Input> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-
-
 export const InputText: Story = {
 	args: {
 		name: "mylabel",
@@ -29,7 +27,6 @@ export const InputText: Story = {
 		},
 	},
 };
-
 
 export const InputEmail: Story = {
 	args: {
@@ -45,7 +42,6 @@ export const InputEmail: Story = {
 	},
 };
 
-
 export const InputDefaultValue: Story = {
 	args: {
 		name: "mylabel",
@@ -58,7 +54,6 @@ export const InputDefaultValue: Story = {
 		},
 	},
 };
-
 
 export const InputErrorInput: Story = {
 	args: {

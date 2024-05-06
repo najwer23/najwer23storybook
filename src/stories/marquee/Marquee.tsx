@@ -6,11 +6,11 @@ export const Marquee = ({
 }: MarqueeTypes) => {
 
 	return (
-		<div className={styles[`marquee`]}>
-			<div className={styles[`track`]}>
+		<div className={styles.marquee}>
+			<div className={styles.track}>
 				{children}
 			</div>
-			<div className={styles[`track`]}>
+			<div className={styles.track}>
 				{children}
 			</div>
 		</div>

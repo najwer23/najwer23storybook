@@ -4,7 +4,7 @@ import styles from "./index.module.css"
 import { useWindowSize } from "../utils/hooks/useWindowSize";
 import { CarouselType } from "./index.types";
 
-export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselType): JSX.Element => {
+export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselType) => {
 	const carouselRef = useRef<any>(null)
 	const [showArrowLeft, setShowArrowLeft] = useState<boolean>(false)
 	const [showArrowRight, setShowArrowRight] = useState<boolean>(false)
@@ -49,9 +49,9 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselTy
 	}
 
 	return (
-		<div className={styles["carouselWrapper"]}>
-			<div className={styles["carouselStyled"]} ref={carouselRef} onScroll={handleScroll}>
-				<div className={[styles["arrowLeft"], showArrowLeft && styles["arrowShow"]].join(' ')} >
+		<div className={styles.carouselWrapper}>
+			<div className={styles.carouselStyled} ref={carouselRef} onScroll={handleScroll}>
+				<div className={[styles.arrowLeft, showArrowLeft && styles.arrowShow].join(' ')} >
 					<Button
 						text={arrowLeftIcon}
 						ariaLabel={"move carousel left"}
@@ -59,7 +59,7 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselTy
 						onClick={slideLeft} />
 				</div>
 				{children}
-				<div className={[styles["arrowRight"], showArrowRight && styles["arrowShow"]].join(' ')} >
+				<div className={[styles.arrowRight, showArrowRight && styles.arrowShow].join(' ')} >
 					<Button
 						text={arrowRightIcon}
 						ariaLabel={"move carousel right"}
