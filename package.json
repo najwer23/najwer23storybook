@@ -59,7 +59,8 @@
 		"rollup",
 		"tree shaking",
 		"vite",
-		"css modules"
+		"css modules",
+		"front-end"
 	],
 	"repository": {
 		"type": "git",
