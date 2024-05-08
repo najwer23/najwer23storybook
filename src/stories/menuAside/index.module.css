@@ -99,7 +99,7 @@
 		display: none;
 		box-sizing: border-box;
 		width: 100vw;
-		background-color: var(--n23-asideMenu-mobile-background-color);
+		background-color: var(--n23-color-surface);
 		font-family: var(--n23-font-family);
 		height: 100vh;
 		padding: 100px 20px 150px 20px;
@@ -120,25 +120,17 @@
 			text-align: left;
 			font-size: var(--n23-font-size-big);
 			font-weight: var(--n23-font-weight-normal);
-			margin-bottom: 10px;
-			padding-bottom: 10px;
-			transition: 0.2s;
+			width: 100%;
 
 			& a {
+				width: 100%;
 				all: unset;
 				cursor: pointer;
 				color: var(--n23-asideMenu-font-color);
-				display: inline-block;
-				padding-top: 5px;
-				padding-bottom: 5px;
-
-				&:active {
-					text-decoration: underline;
-				}
-
-				&:focus-visible {
-					text-decoration: underline;
-				}
+				display: block;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid lightgrey;
 			}
 		}
 
@@ -185,10 +177,6 @@
 		word-spacing: 8px;
 		padding-bottom: 20px;
 		border-bottom: 2px dashed var(--n23-asideMenu-font-color);
-
-		@media (max-width: 1199.98px) {
-			margin-bottom: 20px;
-		}
 	}
 
 	* > .asideMenuTitleSpace {
