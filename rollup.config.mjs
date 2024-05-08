@@ -35,7 +35,7 @@ const Input = Object.fromEntries(
 	])
 );
 
-console.log(Input);
+// console.log(Input);
 
 export default {
 	input: Input,
