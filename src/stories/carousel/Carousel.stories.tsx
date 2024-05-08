@@ -13,7 +13,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const CarouselStandard: Story = {
+export const Default: Story = {
 	args: {
 		arrowLeftIcon: <div>L</div>,
 		arrowRightIcon: <div>R</div>,

@@ -11,8 +11,6 @@ const meta = {
 export default meta;
 
 type Story = StoryObj<typeof meta>;
-export const FooterAlwaysOnBottom: Story = {
-	args: {
-	},
-};
+
+export const Default: Story = {};
 

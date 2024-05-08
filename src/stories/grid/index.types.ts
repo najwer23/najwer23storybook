@@ -1,6 +1,5 @@
-
 export interface GridTypes {
-	children: any;
+	children: React.ReactNode;
 	gap: {
 		col: string,
 		row: string

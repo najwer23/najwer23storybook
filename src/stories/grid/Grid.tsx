@@ -8,7 +8,6 @@ export const Grid = ({
 	col
 }: GridTypes) => {
 
-
 	return (
 		<>
 			<div
@@ -24,8 +23,8 @@ export const Grid = ({
 					} as React.CSSProperties}
 			>
 				{
-					Children.map(children.props.children, (child:any) => (
-						<div className={styles.gridContainerChild}>{child}</div>
+					Children.map(children, (child, key) => (
+						<div className={styles.gridContainerChild} key={key}>{child}</div>
 					))
 				}
 			</div>

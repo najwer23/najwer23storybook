@@ -15,7 +15,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const TextareaClassic: Story = {
+export const Default: Story = {
 	args: {
 		name: "mylabel",
 		label: "Label",

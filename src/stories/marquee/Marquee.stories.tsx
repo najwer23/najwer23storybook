@@ -15,7 +15,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 
-export const MarqueeExample: Story = {
+export const Default: Story = {
 	args: {
 		children: (
 			<>

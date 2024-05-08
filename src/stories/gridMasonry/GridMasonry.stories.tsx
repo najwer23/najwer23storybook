@@ -30,7 +30,7 @@ const items = Array.from({ length: 20 }).map((_, index) => (
 	</div>
 ));
 
-export const GridMasonryWithDynamicColumnsBasedOnWidth: Story = {
+export const Default: Story = {
 	args: {
 		gap: {
 			col: "20px",

@@ -1,5 +1,41 @@
 @layer n23Container {
-	.wrapper {
+	.main {
+		padding: 0 100px;
 
+		@media (max-width: 1199.98px) {
+			padding: 0 35px;
+		}
 	}
+
+	.homeContent {
+		padding: 125px 0 100px;
+
+		@media (max-width: 575.98px) {
+			padding: 0 0 150px;
+		}
+	}
+
+
+	.section {
+		margin-bottom: 150px;
+		padding: 40px 100px 0 100px;
+
+		font-weight: var(--n23-font-weight-normal);
+		font-family: var(--n23-font-family);
+
+		@media (max-width: 1199.98px) {
+			padding: 50px 35px 0 35px;
+		}
+	}
+
+
+
+		@media (min-width: 576px) and (max-width: 767.98px) {}
+
+		@media (min-width: 768px) and (max-width: 991.98px) {}
+
+		@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+		@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
 }

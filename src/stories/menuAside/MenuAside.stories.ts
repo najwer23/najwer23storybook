@@ -149,14 +149,14 @@ const MENU_ASIDE: MenuAsideType = {
 	],
 };
 
-export const MenuLeftAside: Story = {
+export const Default: Story = {
 	args: {
 		menuTitle: "N",
 		...MENU_ASIDE,
 	},
 };
 
-export const MenuLeftAsideWithoutLogo: Story = {
+export const MenuAsideWithoutLogo: Story = {
 	args: {
 		...MENU_ASIDE,
 	},
