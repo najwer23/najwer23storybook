@@ -9,3 +9,5 @@ tsconfig.json
 public/img/f.png
 public/index.html
 storybook-static
+templates
+plopfile.mjs
