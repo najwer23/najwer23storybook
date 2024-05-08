@@ -1,7 +1,7 @@
 import styles from "./index.module.css"
-import { {{name}}Types } from "./index.types";
+import { ContainerTypes } from "./index.types";
 
-export const {{name}} = ({  }: {{name}}Types) => {
+export const Container = ({  }: ContainerTypes) => {
 	return (
 		<div className={styles.wrapper}>
 		"Hello"
