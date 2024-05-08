@@ -1,19 +1,18 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react';
 
 import { GridMasonry } from './GridMasonry';
 
-const meta: Meta<typeof GridMasonry> = {
+const meta = {
 	title: "Grid-Masonry/GridMasonry",
 	component: GridMasonry,
 	parameters: {
 		layout: "centered",
 	},
 	tags: ["autodocs"],
-	argTypes: {
-	},
 };
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 const items = Array.from({ length: 20 }).map((_, index) => (

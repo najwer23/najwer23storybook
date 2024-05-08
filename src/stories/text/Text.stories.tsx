@@ -1,19 +1,18 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { StoryObj } from '@storybook/react';
 
 import { Text } from './Text';
 
-const meta: Meta<typeof Text> = {
+const meta = {
 	title: "Text/Text",
 	component: Text,
 	parameters: {
 		layout: "centered",
 	},
 	tags: ["autodocs"],
-	argTypes: {
-	},
 };
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 const testText = "It was Sam's first view of a battle of Men against Men, and he did not like it much. He was glad that he could not see the dead face. He wondered what the man's name was and where he came from; and if he was really evil of heart, or what lies or threats had led him on the long march from his home; and if he would rather have stayed there in peace."

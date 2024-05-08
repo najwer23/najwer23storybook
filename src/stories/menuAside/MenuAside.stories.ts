@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { StoryObj } from "@storybook/react";
 
 import { MenuAside } from "./MenuAside";
 import { MenuAsideType } from "./index.types";
 
-const meta: Meta<typeof MenuAside> = {
+const meta = {
 	title: "Menu/MenuAside",
 	component: MenuAside,
 	tags: ["autodocs"],
@@ -11,6 +11,7 @@ const meta: Meta<typeof MenuAside> = {
 };
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 const MENU_ASIDE: MenuAsideType = {
