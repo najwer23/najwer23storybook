@@ -92,7 +92,7 @@ export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd }: GridMa
 					}
 				}
 			}
-		}, 30);
+		}, 40);
 
 		return () => clearTimeout(timeoutId);
 
