@@ -24,7 +24,7 @@ export const Grid = ({
 			>
 				{
 					Children.map(children.props.children, (child: any) => (
-						<div className={styles["gridContainerChild"]}>{child}</div>
+						<div className={styles.gridContainerChild}>{child}</div>
 					))
 				}
 			</div>
