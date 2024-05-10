@@ -34,13 +34,13 @@
 
 @layer n23ContainerNav {
 	.n23nav {
-		padding: 40px 100px 0 100px;
+		padding: 50px 100px 0 100px;
 
 		font-weight: var(--n23-font-weight-normal);
 		font-family: var(--n23-font-family);
 
 		@media (max-width: 1199.98px) {
-			padding: 50px 35px 0 35px;
+			padding: 75px 35px 0 35px;
 		}
 	}
 }
