@@ -14,7 +14,7 @@
 		background-color: var(--n23-color-surface);
 		font-family: var(--n23-font-family);
 		height: 100vh;
-		padding: 50px;
+		padding: 60px 50px 50px 50px;
 		overflow: auto;
 		position: fixed;
 		border-left: 1px solid var(--n23-asideMenu-border-right-color);
@@ -102,13 +102,13 @@
 		background-color: var(--n23-color-surface);
 		font-family: var(--n23-font-family);
 		height: 100vh;
-		padding: 100px 20px 150px 20px;
+		padding: 60px 20px 150px 20px;
 		overflow: auto;
 		position: fixed;
 		z-index: 8;
 
 		@media (min-width: 576px) {
-			padding: 100px 50px 150px 50px;
+			padding: 60px 50px 150px 50px;
 		}
 
 		& ul {
