@@ -29,7 +29,7 @@ export const MenuAside = ({ menuItems, menuTitle }: MenuAsideType) => {
 			{/* Desktop */}
 			<div className={styles.asideMenuWrapper}>
 				<div className={styles.asideMenu}>
-					<div className={styles.asideMenuLogo}> {menuTitle} </div>
+					{menuTitle && <div className={styles.asideMenuLogo}> {menuTitle} </div>}
 					{menuItems && (menuItems.map((menuItem) => (
 						menuItem.map((itemGroup) => (
 							<Fragment key={`desktop${itemGroup.menuTitle}`}>
@@ -50,8 +50,7 @@ export const MenuAside = ({ menuItems, menuTitle }: MenuAsideType) => {
 
 			{/* Mobile */}
 			<div className={[styles.asideMenuMobile, menuMobileOpen && styles.open].join(' ')}>
-				<div className={styles.asideMenuLogo}> {menuTitle} </div>
-
+				{menuTitle && <div className={styles.asideMenuLogo}> {menuTitle} </div>}
 				{menuItems && (menuItems.map((menuItem) => (
 					menuItem.map((itemGroup) => (
 						<Fragment key={`mobile${itemGroup.menuTitle}`}>
@@ -59,8 +58,8 @@ export const MenuAside = ({ menuItems, menuTitle }: MenuAsideType) => {
 							<ul>
 								{itemGroup.items.map(({ itemLinkText, itemLink, itemLinkType }) => (
 									<li key={`MobileMenu-${itemGroup.menuTitle}-${itemLinkText}`} >
-										{itemLinkType === "hash" && <a href={`/#/${itemLink}`} onClick={() => {setMenuMobileOpen(false)}} > {itemLinkText}</a>}
-										{itemLinkType === "link" && <a href={`/${itemLink}`} onClick={() => {setMenuMobileOpen(false)}}> {itemLinkText}</a>}
+										{itemLinkType === "hash" && <a href={`/#/${itemLink}`} onClick={() => { setMenuMobileOpen(false) }} > {itemLinkText}</a>}
+										{itemLinkType === "link" && <a href={`/${itemLink}`} onClick={() => { setMenuMobileOpen(false) }}> {itemLinkText}</a>}
 										{itemLinkType === "linkOut" && <a target="_blank" rel="noopener noreferrer" href={`${itemLink}`}> {itemLinkText}</a>}
 									</li>
 								))}
