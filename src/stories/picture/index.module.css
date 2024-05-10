@@ -1,0 +1,24 @@
+@layer n23Picture {
+	.picture {
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+		display: block;
+
+		&.border {
+			border: 2px solid black;
+		}
+
+		& img {
+			opacity: 0;
+			transition: opacity 250ms ease-in-out;
+			display: grid;
+			width: 100%;
+			aspect-ratio: var(--n23-img-ar);
+		}
+
+		&.loaded img {
+			opacity: 1;
+		}
+	}
+}
