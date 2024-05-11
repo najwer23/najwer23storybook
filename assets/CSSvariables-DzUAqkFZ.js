@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-QvZ8i92b.js";import{useMDXComponents as e}from"./index-FeUjBnvO.js";import{M as i}from"./index-_XN6t8xZ.js";import"./index-uubelm5h.js";import"./iframe-C0AVI3sz.js";import"../sb-preview/runtime.js";import"./index-Dei0BBcc.js";import"./index-DXimoRZY.js";import"./index-D0OBZnxu.js";import"./index-DrFu-skq.js";function o(t){const r={blockquote:"blockquote",code:"code",h1:"h1",p:"p",pre:"pre",...e(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"CSSvariables"}),`
+import{j as n}from"./jsx-runtime-QvZ8i92b.js";import{useMDXComponents as e}from"./index-FeUjBnvO.js";import{M as i}from"./index-DdpZp7Fa.js";import"./index-uubelm5h.js";import"./iframe-C1WAfVvv.js";import"../sb-preview/runtime.js";import"./index-Dei0BBcc.js";import"./index-DXimoRZY.js";import"./index-D0OBZnxu.js";import"./index-DrFu-skq.js";function o(t){const r={blockquote:"blockquote",code:"code",h1:"h1",p:"p",pre:"pre",...e(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"CSSvariables"}),`
 `,n.jsx(r.h1,{id:"css-variables",children:"CSS variables"}),`
 `,n.jsxs(r.blockquote,{children:[`
 `,n.jsx(r.p,{children:"Colors are the smiles of nature."}),`
@@ -7,6 +7,7 @@ import{j as n}from"./jsx-runtime-QvZ8i92b.js";import{useMDXComponents as e}from"
 	--n23-color-primary: #7a2e44;\r
 	--n23-color-on-primary: #324186;\r
 	--n23-color-on-primary-active: #232F5C;\r
+	--n23-color-on-primary-link-active: orange;\r
 	--n23-color-secondary: #6a288a;\r
 	--n23-color-on-secondary: #184a4e;\r
 \r
