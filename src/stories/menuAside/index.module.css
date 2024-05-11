@@ -73,6 +73,11 @@
 					transform: translate3d(0, 0.2em, 0);
 				}
 
+				&:focus-visible::after,
+				&:active::after {
+					background-color: var(--n23-color-on-primary-link-active);
+				}
+
 
 				/* the trick */
 				&::after {
