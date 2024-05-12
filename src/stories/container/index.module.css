@@ -3,7 +3,7 @@
 		padding: 0 100px;
 
 		@media (max-width: 1199.98px) {
-			padding: 0 35px;
+			padding: 0 20px;
 		}
 	}
 }
@@ -27,7 +27,7 @@
 		font-family: var(--n23-font-family);
 
 		@media (max-width: 1199.98px) {
-			padding: 50px 35px 0 35px;
+			padding: 50px 20px 0 20px;
 		}
 	}
 }
@@ -40,7 +40,7 @@
 		font-family: var(--n23-font-family);
 
 		@media (max-width: 1199.98px) {
-			padding: 75px 35px 0 35px;
+			padding: 75px 20px 0 20px;
 		}
 	}
 }
