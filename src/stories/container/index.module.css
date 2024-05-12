@@ -45,6 +45,20 @@
 	}
 }
 
+
+@layer n23ContainerDialog {
+	.n23dialog {
+		padding: 40px;
+
+		font-weight: var(--n23-font-weight-normal);
+		font-family: var(--n23-font-family);
+
+		@media (max-width: 1199.98px) {
+			padding: 25px
+		}
+	}
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
 }
 
