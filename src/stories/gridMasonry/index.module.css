@@ -1,4 +1,10 @@
 @layer n23GridMasonry {
+	html:has(div[class*="masonryContainer"]) {
+		& {
+			overflow-y: scroll;
+		}
+	}
+
 	.masonryContainer {
 		display: flex;
 		column-gap: var(--n23-m-fg-c);
@@ -11,9 +17,11 @@
 	.masonryColumn {
 		width: calc(
 			(100% / var(--n23-m-flex-col)) -
-					(((var(--n23-m-flex-col) - 1) / var(--n23-m-flex-col)) * var(--n23-m-fg-c))
+				(
+					((var(--n23-m-flex-col) - 1) / var(--n23-m-flex-col)) *
+						var(--n23-m-fg-c)
+				)
 		);
-
 	}
 
 	.masonryColumnChild {

@@ -158,7 +158,7 @@
 		display: none;
 		position: fixed;
 		z-index: 9;
-		left: calc(100% - 99px);
+		left: calc(100% - 100px);
 		right: 0;
 		bottom: 40px;
 
