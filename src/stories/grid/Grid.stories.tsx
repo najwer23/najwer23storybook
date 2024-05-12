@@ -38,7 +38,7 @@ export const Default: Story = {
 export const GridDynamicColumnsBasedOnWidth: Story = {
 	args: {
 		gap: {
-			col: "0",
+			col: "0px",
 			row: "20px"
 		},
 		col: {
