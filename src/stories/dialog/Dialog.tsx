@@ -45,9 +45,7 @@ export const Dialog = ({ modalOpen, modalClose, children, title }: DialogTypes) 
 					}}
 				>
 					<>
-						{title && <header>
-							<Text kind={"p"}><b>{title}</b></Text>
-						</header>}
+						{title && <header><Text kind={"p"}><b>{title}</b></Text></header>}
 
 						<article>{children}</article>
 
