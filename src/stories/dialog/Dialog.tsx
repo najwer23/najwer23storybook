@@ -13,12 +13,16 @@ export const Dialog = ({ modalOpen, modalClose, children, title }: DialogTypes) 
 	useEffect(() => {
 		if (modalOpen) {
 			ref.current?.showModal()
+			document.body.style.paddingRight = `${window.innerWidth - document.body.clientWidth}px`
+			document.body.style.overflow = 'hidden';
 		} else {
 			ref.current?.classList.add(styles.minimize)
 
 			const timeoutId = setTimeout(() => {
 				ref.current?.close();
 				ref.current?.classList.remove(styles.minimize)
+				document.body.style.paddingRight = '0'
+				document.body.style.overflow = 'unset'
 			}, 400);
 
 			return () => clearTimeout(timeoutId);
