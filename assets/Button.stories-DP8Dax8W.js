@@ -1,4 +1,4 @@
-import{B as d}from"./Button-DRYQn4j-.js";import"./jsx-runtime-QvZ8i92b.js";import"./index-uubelm5h.js";const g={title:"Buttons/Button",component:d,parameters:{layout:"centered"},tags:["autodocs"]},t={args:{text:"Button",type:"button",ariaLabel:"button-click"}},e={args:{text:"Button",type:"button",disabled:!0,ariaLabel:"button-click"}},a={args:{text:"Button",type:"reset",disabled:!1,ariaLabel:"button-click"}};var r,o,s;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`{
+import{B as d}from"./Button-C0uYIL0L.js";import"./jsx-runtime-QvZ8i92b.js";import"./index-uubelm5h.js";const g={title:"Buttons/Button",component:d,parameters:{layout:"centered"},tags:["autodocs"]},t={args:{text:"Button",type:"button",ariaLabel:"button-click"}},e={args:{text:"Button",type:"button",disabled:!0,ariaLabel:"button-click"}},a={args:{text:"Button",type:"reset",disabled:!1,ariaLabel:"button-click"}};var r,o,s;t.parameters={...t.parameters,docs:{...(r=t.parameters)==null?void 0:r.docs,source:{originalSource:`{
   args: {
     text: "Button",
     type: "button",
