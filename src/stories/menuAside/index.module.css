@@ -140,6 +140,10 @@
 				-ms-user-select: none;
 				user-select: none;
 				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+				&:active {
+					color: var(--n23-color-on-primary-link-active);
+				}
 			}
 		}
 
