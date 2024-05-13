@@ -1,4 +1,8 @@
 @layer n23Dialog {
+	html:has(dialog[open][modal-mode="mega"]) {
+		overflow: hidden;
+	}
+
 	.dialog {
 		--animation-in-settings: 500ms cubic-bezier(0.25, 0, 0.3, 1) normal;
 		--animation-out-settings: 500ms cubic-bezier(0.5, -0.5, 0.1, 1.5) normal;
