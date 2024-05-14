@@ -5,13 +5,14 @@ import { GridTypes } from "./Grid.types";
 export const Grid = ({
 	children,
 	gap,
-	col
+	col,
+	sameLine
 }: GridTypes) => {
 
 	return (
 		<>
 			<div
-				className={styles.gridContainer}
+				className={[styles.gridContainer, sameLine && styles.sameLine].join(" ")}
 				style={
 					{
 						"--n23-fc-m": col.mobile,

@@ -9,6 +9,10 @@
 		width: 100%;
 	}
 
+	.gridContainer.sameLine {
+		align-items: center;
+	}
+
 	.gridContainerChild {
 		width: calc(
 			(100% / var(--n23-flex-col)) -
