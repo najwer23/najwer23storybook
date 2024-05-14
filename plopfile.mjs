@@ -26,7 +26,7 @@ export default function (plop) {
 			},
 			{
 				type: "add",
-				path: "src/stories/{{lowerCase name}}/index.module.css",
+				path: "src/stories/{{lowerCase name}}/{{name}}.module.css",
 				templateFile: "templates/CSS.txt",
 			},
 			{
@@ -36,7 +36,7 @@ export default function (plop) {
 			},
 			{
 				type: "add",
-				path: "src/stories/{{lowerCase name}}/index.types.ts",
+				path: "src/stories/{{lowerCase name}}/{{name}}.types.ts",
 				templateFile: "templates/Types.txt",
 			},
 		],

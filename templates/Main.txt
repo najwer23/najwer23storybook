@@ -1,5 +1,5 @@
-import styles from "./index.module.css"
-import { {{name}}Types } from "./index.types";
+import styles from "./{{name}}.module.css"
+import { {{name}}Types } from "./{{name}}.types";
 
 export const {{name}} = ({  }: {{name}}Types) => {
 	return (
