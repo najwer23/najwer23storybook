@@ -6,6 +6,7 @@
 		column-gap: var(--n23-fg-c);
 		row-gap: var(--n23-fg-r);
 		flex-wrap: wrap;
+		width: 100%;
 	}
 
 	.gridContainerChild {
