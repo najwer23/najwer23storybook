@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "../button";
-import styles from "./index.module.css"
+import styles from "./Carousel.module.css"
 import { useWindowSize } from "../utils/hooks/useWindowSize";
-import { CarouselType } from "./index.types";
+import { CarouselType } from "./Carousel.types";
 
 export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselType) => {
 	const carouselRef = useRef<any>(null)

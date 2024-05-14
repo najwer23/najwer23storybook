@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { validator } from "../utils/functions/validator";
-import styles from "./index.module.css"
-import { TextareaTypes } from "./index.types";
+import styles from "./Textarea.module.css"
+import { TextareaTypes } from "./Textarea.types";
 
 export const Textarea = ({
 	name,

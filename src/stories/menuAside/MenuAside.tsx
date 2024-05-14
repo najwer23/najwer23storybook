@@ -1,8 +1,8 @@
 import { Fragment, useEffect, useState } from "react";
 import { Button } from "../button";
-import styles from "./index.module.css"
+import styles from "./MenuAside.module.css"
 import { useWindowSize } from "../utils/hooks/useWindowSize";
-import { MenuAsideType } from "./index.types";
+import { MenuAsideType } from "./MenuAside.types";
 
 export const MenuAside = ({ menuItems, menuTitle }: MenuAsideType) => {
 	const [menuMobileOpen, setMenuMobileOpen] = useState<boolean>(false);

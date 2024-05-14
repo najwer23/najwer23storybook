@@ -1,6 +1,6 @@
 import { Children, ReactNode, useEffect, useRef } from "react"
 import { useResizeObserver } from "../../../../najwer23storybook/src/stories/utils/hooks/useResizeObserver"
-import styles from './index.module.css'
+import styles from './GridMasonry.module.css'
 
 export interface P {
 	arrWithChildren?: ReactNode[]

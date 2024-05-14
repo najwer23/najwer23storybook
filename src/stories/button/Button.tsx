@@ -1,5 +1,5 @@
-import styles from "./index.module.css"
-import { ButtonTypes } from "./index.types";
+import styles from "./Button.module.css"
+import { ButtonTypes } from "./Button.types";
 
 export const Button = ({ ariaLabel, type, text, disabled = false, ...props }: ButtonTypes) => {
 	return (

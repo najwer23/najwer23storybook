@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
-import styles from "./index.module.css"
-import { DialogTypes } from "./index.types";
+import styles from "./Dialog.module.css"
+import { DialogTypes } from "./Dialog.types";
 import { Text } from "../text";
 import { Button } from "../button";
 import { Container } from "../container";

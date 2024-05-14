@@ -1,5 +1,5 @@
-import styles from "./index.module.css"
-import { ContainerTypes } from "./index.types";
+import styles from "./Container.module.css"
+import { ContainerTypes } from "./Container.types";
 
 export const Container = ({ children, kind }: ContainerTypes) => {
 	return (

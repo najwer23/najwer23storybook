@@ -1,5 +1,5 @@
-import styles from "./index.module.css"
-import { MarqueeTypes } from "./index.types";
+import styles from "./Marquee.module.css"
+import { MarqueeTypes } from "./Marquee.types";
 
 export const Marquee = ({
 	children

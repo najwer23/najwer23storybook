@@ -1,6 +1,6 @@
 import { useState } from "react";
-import styles from "./index.module.css"
-import { PictureTypes } from "./index.types";
+import styles from "./Picture.module.css"
+import { PictureTypes } from "./Picture.types";
 
 export const Picture = ({ src, alt, ar, kind }: PictureTypes) => {
 	const [loaded, setLoaded] = useState(false);

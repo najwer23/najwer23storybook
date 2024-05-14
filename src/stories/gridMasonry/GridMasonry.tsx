@@ -1,9 +1,9 @@
 
 import { useEffect, useState } from "react";
-import styles from './index.module.css'
+import styles from './GridMasonry.module.css'
 import { useWindowSize } from "../utils/hooks/useWindowSize";
 import { GridMasonryColumn } from "./GridMasonryColumn";
-import { ChildrenMasonry, GridMasonryTypes } from "./index.types";
+import { ChildrenMasonry, GridMasonryTypes } from "./GridMasonry.types";
 
 export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd }: GridMasonryTypes) => {
 	const [itemCnt, setItemCnt] = useState<number>(0)

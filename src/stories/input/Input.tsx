@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { validator } from "../utils/functions/validator";
-import styles from "./index.module.css"
-import { InputTypes } from "./index.types";
+import styles from "./Input.module.css"
+import { InputTypes } from "./Input.types";
 
 export const Input = ({
 	name,

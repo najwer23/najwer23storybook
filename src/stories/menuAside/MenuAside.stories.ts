@@ -1,7 +1,7 @@
 import type { StoryObj } from "@storybook/react";
 
 import { MenuAside } from "./MenuAside";
-import { MenuAsideType } from "./index.types";
+import { MenuAsideType } from "./MenuAside.types";
 
 const meta = {
 	title: "Menu/MenuAside",

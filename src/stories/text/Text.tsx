@@ -1,6 +1,6 @@
 import { createElement } from "react";
-import styles from "./index.module.css"
-import { TextTypes } from "./index.types";
+import styles from "./Text.module.css"
+import { TextTypes } from "./Text.types";
 
 export const Text = ({
 	kind,
