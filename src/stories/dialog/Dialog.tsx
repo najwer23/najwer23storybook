@@ -22,7 +22,7 @@ export const Dialog = ({ modalOpen, modalClose, children, title }: DialogTypes) 
 				ref.current?.close();
 				ref.current?.classList.remove(styles.minimize)
 				document.body.style.paddingRight = '0'
-				document.body.style.overflow = 'unset'
+				document.body.style.overflow = ''
 			}, 400);
 
 			return () => clearTimeout(timeoutId);

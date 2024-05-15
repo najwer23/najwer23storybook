@@ -7,6 +7,6 @@ export const Text = ({
 	children
 }: TextTypes) => {
 	return <>
-		{createElement(kind.includes("h") ? kind : "p", { className: styles[kind + "Text"] }, children)}
+		{createElement(kind.includes("h") ? kind : "p", { className: [styles[kind + "Text"], styles.shared].join(" ") }, children)}
 	</>
 };

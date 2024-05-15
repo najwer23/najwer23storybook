@@ -34,7 +34,7 @@
 
 @layer n23ContainerNav {
 	.n23nav {
-		padding: 50px 100px 0 100px;
+		padding: 35px 100px 0 100px;
 
 		font-weight: var(--n23-font-weight-normal);
 		font-family: var(--n23-font-family);
