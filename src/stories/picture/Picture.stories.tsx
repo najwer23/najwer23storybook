@@ -1,6 +1,6 @@
 import type { StoryObj } from '@storybook/react';
 
-import { Picture } from "." ;
+import { Picture } from ".";
 
 const meta = {
 	title: "Picture/Picture",
@@ -19,7 +19,7 @@ export const Default: Story = {
 	args: {
 		src: "https://source.unsplash.com/random/300x400",
 		alt: "",
-		ar: 3/4,
+		ar: 3 / 4,
 	},
 	decorators: [
 		(Story) => <Story />
@@ -35,5 +35,17 @@ export const PictureBorder: Story = {
 	},
 	decorators: [
 		(Story) => <Story />
+	]
+};
+
+export const PictureBorderContainer: Story = {
+	args: {
+		src: "https://source.unsplash.com/random/300x400",
+		alt: "",
+		ar: 3 / 4,
+		kind: "border"
+	},
+	decorators: [
+		(Story) => <div style={{width: "300px", height: "400px"}}><Story /></div>
 	]
 };

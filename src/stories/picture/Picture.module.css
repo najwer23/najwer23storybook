@@ -1,12 +1,10 @@
 @layer n23Picture {
 	.picture {
-		width: 100%;
-		height: auto;
-		box-sizing: border-box;
 		display: block;
 
 		&.border {
 			border: 2px solid black;
+			box-sizing: border-box;
 		}
 
 		& img {
@@ -14,7 +12,7 @@
 			transition: opacity 250ms ease-in-out;
 			display: grid;
 			width: 100%;
-			aspect-ratio: var(--n23-img-ar);
+			height: auto;
 		}
 
 		&.loaded img {
