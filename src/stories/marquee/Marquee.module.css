@@ -1,28 +1,42 @@
-@layer n23TextMoving {
+@layer n23Marquee {
 	.marquee {
-		position: relative;
-		display: flex;
+		height: var(--n23-marqueee-height);
 		overflow: hidden;
-		user-select: none;
-		gap: 50px;
-		width: 100%;
+		white-space: nowrap;
+		position: relative;
+	}
+/*
+	.marquee:after {
+		content: '';
+		position: absolute;
+		left: 0; right: 0;
+		top: 0; bottom: 0;
+		z-index: 2;
+
+		background-image:
+			linear-gradient(to right, white, rgba(157, 158, 158, 0) 150px),
+			linear-gradient(to left , white, rgba(157, 158, 158, 0) 150px);
+	} */
+
+	.marquee:hover .track {
+		animation-play-state: paused;
 	}
 
 	.track {
-		flex-shrink: 0;
-		display: flex;
-		justify-content: space-around;
-		gap: 50px;
-		min-width: 100%;
-		animation: scroll 10s linear infinite;
+		display: inline-block;
+		animation: var(--n23-marqueee-speed) slide infinite linear;
+
+		& > * {
+			margin-right: var(--n23-marqueee-gap);
+		}
 	}
 
-	@keyframes scroll {
+	@keyframes slide {
 		from {
 			transform: translateX(0);
 		}
 		to {
-			transform: translateX(calc(-100% - 50px));
+			transform: translateX(-100%);
 		}
 	}
 }

@@ -12,19 +12,22 @@ const meta = {
 };
 
 export default meta;
-type Story = StoryObj<typeof meta>;
 
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 	args: {
+		height: "200px",
+		speed: "10s",
 		children: (
 			<>
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>4</div>
+				{Array.from({ length: 5 }, (_, i) => <img key={i} src="https://source.unsplash.com/random/200x200" />)}
+				<img key={5} src="https://source.unsplash.com/random/400x200" />
 			</>
 		)
 	},
+	decorators: [
+		(Story) => <div style={{ width: "900px" }}> <Story /></div>
+	]
 };
 
