@@ -65,11 +65,16 @@ export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd }: GridMa
 	}
 
 	useEffect(() => {
-		if (getNumberOfColumns(width) != numberOfColumns) {
-			setItemCnt(0)
-			setNumberOfColumns(getNumberOfColumns(width))
-			setChildrenMasonry(initChildrenMasonry(getNumberOfColumns(width)))
-		}
+		// too fast to see changes, so lets do small delay
+		const timeoutId = setTimeout(() => {
+			if (getNumberOfColumns(width) != numberOfColumns) {
+				setItemCnt(0)
+				setNumberOfColumns(getNumberOfColumns(width))
+				setChildrenMasonry(initChildrenMasonry(getNumberOfColumns(width)))
+			}
+		}, 100);
+
+		return () => clearTimeout(timeoutId);
 	}, [width])
 
 	useEffect(() => {
