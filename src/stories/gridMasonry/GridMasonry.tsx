@@ -92,7 +92,7 @@ export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd }: GridMa
 					}
 				}
 			}
-		}, 40); // could be 0, but with 40 there is cool loading animation
+		}, 0); // could be 0, but with 40 there is cool loading animation
 
 		return () => clearTimeout(timeoutId);
 
