@@ -5,7 +5,7 @@ import { useWindowSize } from "../utils/hooks/useWindowSize";
 import { GridMasonryColumn } from "./GridMasonryColumn";
 import { ChildrenMasonry, GridMasonryTypes } from "./GridMasonry.types";
 
-export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd }: GridMasonryTypes) => {
+export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd, delay = 0 }: GridMasonryTypes) => {
 	const [itemCnt, setItemCnt] = useState<number>(0)
 	const [width] = useWindowSize();
 
@@ -97,7 +97,7 @@ export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd }: GridMa
 					}
 				}
 			}
-		}, 0); // could be 0, but with 40 there is cool loading animation
+		}, delay); // could be 0, but with 40 there is cool loading animation
 
 		return () => clearTimeout(timeoutId);
 

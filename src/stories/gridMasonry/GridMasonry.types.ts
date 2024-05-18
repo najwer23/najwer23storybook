@@ -12,6 +12,7 @@ export interface GridMasonryTypes {
 		desktop: number;
 		tablet: number;
 	};
+	delay?: number;
 	onGridMasonryLoadEnd?: (isGridMasonryLoadEnd: boolean) => void;
 }
 
