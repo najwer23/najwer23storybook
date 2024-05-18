@@ -4,7 +4,7 @@ import styles from "./Carousel.module.css"
 import { useWindowSize } from "../utils/hooks/useWindowSize";
 import { CarouselType } from "./Carousel.types";
 
-export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselType) => {
+export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon, gap = "60px" }: CarouselType) => {
 	const carouselRef = useRef<any>(null)
 	const [showArrowLeft, setShowArrowLeft] = useState<boolean>(false)
 	const [showArrowRight, setShowArrowRight] = useState<boolean>(false)
@@ -49,8 +49,12 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon }: CarouselTy
 	}
 
 	return (
-		<div className={styles.carouselWrapper}>
-			<div className={styles.carouselStyled} ref={carouselRef} onScroll={handleScroll}>
+		<div className={styles.carouselWrapper} style={
+			{
+				"--n23-carousel-gap": gap
+			} as React.CSSProperties}
+		>
+			<div className={styles.carousel} ref={carouselRef} onScroll={handleScroll}>
 				<div className={[styles.arrowLeft, showArrowLeft && styles.arrowShow].join(' ')} >
 					<Button
 						text={arrowLeftIcon}
