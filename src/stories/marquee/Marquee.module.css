@@ -4,6 +4,7 @@
 		overflow: hidden;
 		white-space: nowrap;
 		position: relative;
+		display: flex;
 	}
 /*
 	.marquee:after {
@@ -23,11 +24,12 @@
 	}
 
 	.track {
-		display: inline-block;
+		display: flex;
 		animation: var(--n23-marqueee-speed) slide infinite linear;
 
 		& > * {
 			margin-right: var(--n23-marqueee-gap);
+			flex-shrink: 0;
 		}
 	}
 
