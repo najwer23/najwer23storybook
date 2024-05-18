@@ -51,7 +51,7 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon, gap = "60px"
 	return (
 		<div className={styles.carouselWrapper} style={
 			{
-				"--n23-carousel-gap": gap
+				"--n23-c-carousel-gap": gap
 			} as React.CSSProperties}
 		>
 			<div className={styles.carousel} ref={carouselRef} onScroll={handleScroll}>

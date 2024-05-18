@@ -5,10 +5,10 @@
 	}
 
 	.inputLabel {
-		font-size: var(--n23-font-size-semi-small);
-		font-family: var(--n23-font-family);
-		font-weight: var(--n23-font-weight-semi-bold);
-		color: var(--n23-color-font);
+		font-size: var(--n23-input-label-font-size);
+		font-family: var(--n23-input-label-font-family);
+		font-weight: var(--n23-input-label-font-weight);
+		color: var(--n23-input-label-font-color);
 		line-height: 22px;
 	}
 
@@ -17,31 +17,31 @@
 
 		& textarea {
 			box-sizing: border-box;
+			field-sizing: content;
+			block-size: 100%;
 			max-height: 400px;
 			min-height: 200px;
-			width: 100%;
 			padding: 10px;
-			color: var(--n23-color-font);
-			font-family: var(--n23-font-family);
-			font-weight: var(--n23-font-weight-normal);
-			font-size: var(--n23-font-size-normal);
-			min-width: 100%;
+			color: var(--n23-input-input-font-color);
+			font-family: var(--n23-input-input-font-family);
+			font-weight: var(--n23-input-input-font-weight);
+			font-size: var(--n23-input-input-font-size);
 			resize: vertical;
-			border: 1px solid var(--n23-color-font)
+			border: 1px solid var(--n23-input-input-border-color);
 		}
 
 		& ::placeholder {
 			filter: brightness(150%);
-			font-weight: var(--n23-font-weight-thin);
+			font-weight: var(--n23-input-input-placeholder-font-weight);
 		}
 	}
 
 	.inputError {
-		font-size: var(--n23-font-size-small);
-		font-family: var(--n23-font-family);
-		font-weight: var(--n23-font-weight-normal);
+		font-size: var(--n23-input-error-font-size);
+		font-family: var(--n23-input-error-font-family);
+		font-weight: var(--n23-input-error-font-weight);
 		line-height: 1;
 		margin: 2px;
-		color: var(--n23-color-error);
+		color: var(--n23-input-error-font-color);
 	}
 }

@@ -15,12 +15,12 @@ export const Grid = ({
 				className={[styles.gridContainer, sameLine && styles.sameLine].join(" ")}
 				style={
 					{
-						"--n23-fc-m": col.mobile,
-						"--n23-fc-t": col.tablet,
-						"--n23-fc-sd": col.smallDesktop,
-						"--n23-fc-d": col.desktop,
-						"--n23-fg-c": gap.col,
-						"--n23-fg-r": gap.row
+						"--n23-c-column-mobile": col.mobile,
+						"--n23-c-column-tablet": col.tablet,
+						"--n23-c-column-small-desktop": col.smallDesktop,
+						"--n23-c-column-desktop": col.desktop,
+						"--n23-c-column-gap": gap.col,
+						"--n23-c-row-gap": gap.row
 					} as React.CSSProperties}
 			>
 				{

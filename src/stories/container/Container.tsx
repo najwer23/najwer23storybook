@@ -3,7 +3,7 @@ import { ContainerTypes } from "./Container.types";
 
 export const Container = ({ children, kind }: ContainerTypes) => {
 	return (
-		<div className={styles["n23" + kind]}>
+		<div className={[styles["n23" + kind], styles.shared].join(" ")}>
 			{children}
 		</div>
 	);

@@ -1,7 +1,7 @@
 @layer n23Carouel {
 	.carousel {
 		display: flex;
-		gap: var(--n23-carousel-gap);
+		gap: var(--n23-c-carousel-gap);
 		flex-wrap: nowrap;
 		overflow-x: scroll;
 		scroll-behavior: smooth;

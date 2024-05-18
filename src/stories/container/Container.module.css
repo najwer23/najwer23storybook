@@ -1,3 +1,10 @@
+@layer n23ContainerShared {
+	.shared {
+		font-weight: var(--n23-font-weight-normal);
+		font-family: var(--n23-font-family);
+	}
+}
+
 @layer n23ContainerMain {
 	.n23main {
 		padding: 0 100px;
@@ -23,9 +30,6 @@
 		margin-bottom: 150px;
 		padding: 40px 100px 0 100px;
 
-		font-weight: var(--n23-font-weight-normal);
-		font-family: var(--n23-font-family);
-
 		@media (max-width: 1199.98px) {
 			padding: 50px 20px 0 20px;
 		}
@@ -36,37 +40,18 @@
 	.n23nav {
 		padding: 35px 100px 0 100px;
 
-		font-weight: var(--n23-font-weight-normal);
-		font-family: var(--n23-font-family);
-
 		@media (max-width: 1199.98px) {
 			padding: 75px 20px 0 20px;
 		}
 	}
 }
 
-
 @layer n23ContainerDialog {
 	.n23dialog {
 		padding: 40px;
 
-		font-weight: var(--n23-font-weight-normal);
-		font-family: var(--n23-font-family);
-
 		@media (max-width: 1199.98px) {
-			padding: 25px
+			padding: 25px;
 		}
 	}
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-}
-
-@media (min-width: 1200px) and (max-width: 1399.98px) {
 }

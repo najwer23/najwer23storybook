@@ -106,12 +106,12 @@ export const GridMasonry = ({ children, gap, col, onGridMasonryLoadEnd, delay = 
 	return (
 		<div className={styles.masonryContainer} style={
 			{
-				"--n23-m-fc-m": col.mobile,
-				"--n23-m-fc-t": col.tablet,
-				"--n23-m-fc-sd": col.smallDesktop,
-				"--n23-m-fc-d": col.desktop,
-				"--n23-m-fg-c": gap.col,
-				"--n23-m-fg-r": gap.row
+				"--n23-c-masonry-column-mobile": col.mobile,
+				"--n23-c-masonry-column-tablet": col.tablet,
+				"--n23-c-masonry-column-small-desktop": col.smallDesktop,
+				"--n23-c-masonry-column-desktop": col.desktop,
+				"--n23-c-masonry-column-gap": gap.col,
+				"--n23-c-masonry-row-gap": gap.row
 			} as React.CSSProperties}
 		>
 			{childrenMasonry.map(({ arrWithElm, name }) => (

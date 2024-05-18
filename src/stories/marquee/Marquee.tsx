@@ -11,9 +11,9 @@ export const Marquee = ({
 	return (
 		<div className={styles.marquee} style={
 			{
-				"--n23-marqueee-height": height,
-				"--n23-marqueee-gap": gap,
-				"--n23-marqueee-speed": speed,
+				"--n23-marquee-height": height,
+				"--n23-marquee-gap": gap,
+				"--n23-marquee-speed": speed,
 			} as React.CSSProperties}>
 			<div className={styles.track}>
 				{
