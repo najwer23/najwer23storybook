@@ -59,11 +59,6 @@
 				--animation-in-settings: 200ms cubic-bezier(0.25, 0, 0.3, 1) normal;
 				animation: slidein var(--animation-in-settings);
 			}
-
-			&.minimize {
-				--animation-out-settings: 300ms cubic-bezier(0.25, 0, 0.3, 1) normal;
-				animation: slideout var(--animation-out-settings);
-			}
 		}
 	}
 
@@ -76,13 +71,6 @@
 		to {
 			opacity: 1;
 			transform: translateY(0);
-		}
-	}
-
-	@keyframes slideout {
-		to {
-			opacity: 0;
-			transform: translateY(50%);
 		}
 	}
 
