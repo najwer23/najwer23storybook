@@ -38,13 +38,13 @@
 		}
 
 		& ul li {
-			font-size: var(--n23-menu-aside-desktop-font-size);
-			font-weight: var(--n23-menu-aside-desktop-font-weight);
+			font-size: var(--n23-menu-aside-font-size);
+			font-weight: var(--n23-menu-aside-font-weight);
 
 			& a {
 				all: unset;
 				cursor: pointer;
-				color: var(--n23-menu-aside-desktop-font-color);
+				color: var(--n23-menu-aside-font-color);
 				display: block;
 				padding-top: 20px;
 				padding-bottom: 20px;
@@ -59,7 +59,7 @@
 					left: 0;
 					width: 100%;
 					height: 2px;
-					background-color: var(--n23-menu-aside-desktop-font-color);
+					background-color: var(--n23-menu-aside-font-color);
 
 					opacity: 1;
 					transition: opacity 300ms, transform 300ms;
@@ -74,7 +74,7 @@
 
 				&:focus-visible::after,
 				&:active::after {
-					background-color: var(--n23-menu-aside-desktop-underline-color-active);
+					background-color: var(--n23-menu-aside-underline-color-active);
 				}
 
 
@@ -95,115 +95,5 @@
 		& ul li:last-child {
 			margin-bottom: 100px;
 		}
-	}
-
-	/* MOBILE */
-
-	.asideMenuMobile {
-		display: none;
-		box-sizing: border-box;
-		width: 100vw;
-		background-color: var(--n23-menu-aside-background-color);
-		font-family: var(--n23-menu-aside-font-family);
-		height: 100vh;
-		padding: 80px 20px 150px 20px;
-		overflow: auto;
-		position: fixed;
-		z-index: 8;
-
-		& ul {
-			all: unset;
-			list-style-type: none;
-		}
-
-		& ul li {
-			text-align: left;
-			font-size: var(--n23-menu-aside-mobile-font-size);
-			font-weight: var(--n23-menu-aside-mobile-font-weight);
-			width: 100%;
-
-			& a {
-				width: 100%;
-				cursor: pointer;
-				color: var(--n23-menu-aside-mobile-font-color);
-				display: block;
-				padding-top: 20px;
-				padding-bottom: 20px;
-				border-bottom: 1px solid lightgrey;
-				text-decoration: none;
-
-				-webkit-touch-callout: none;
-				-webkit-user-select: none;
-				-khtml-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-				&:active {
-					color: var(--n23-menu-aside-mobile-font-color-active);
-				}
-			}
-		}
-
-		& ul li:last-child {
-			margin-bottom: 100px;
-		}
-	}
-
-	@media (max-width: 1199.98px) {
-		.asideMenuMobile.open {
-			display: block;
-		}
-	}
-
-	.asideMenuMobileButton {
-		display: none;
-		position: fixed;
-		z-index: 9;
-		left: calc(100% - 100px);
-		right: 0;
-		bottom: 40px;
-
-		@media (max-width: 1199.98px) {
-			& {
-				display: block;
-			}
-		}
-	}
-
-	/* Others */
-
-	.menuOpen {
-		overflow: hidden;
-	}
-
-	.asideMenuTitle {
-		font-family: var(--n23-menu-aside-font-family);
-		font-size: var(--n23-menu-aside-title-font-size);
-		font-weight: var(--n23-menu-aside-title-font-weight);
-		color: var(--n23-menu-aside-title-font-color);
-		letter-spacing: 4px;
-		text-transform: uppercase;
-		letter-spacing: 10px;
-		word-spacing: 8px;
-		padding-bottom: 20px;
-		border-bottom: 4px solid lightgrey;
-	}
-
-	* > .asideMenuTitleSpace {
-		margin-top: 100px;
-	}
-
-	* > .asideMenuTitleSpace ~ .asideMenuTitleSpace {
-		margin-top: unset;
-	}
-
-	.asideMenuLogo {
-		font-family: var(--n23-menu-aside-font-family);
-		font-size: 120px;
-		font-weight: var(--n23-menu-aside-title-font-weight);
-		line-height: 1;
-		margin-top: -20px;
 	}
 }

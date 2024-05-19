@@ -1,7 +1,7 @@
 import type { StoryObj } from "@storybook/react";
 
 import { MenuAside } from "./MenuAside";
-import { MenuAsideType } from "./MenuAside.types";
+import { MenuTypes } from "../menu/Menu.types";
 
 const meta = {
 	title: "Menu/MenuAside",
@@ -14,7 +14,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const MENU_ASIDE: MenuAsideType = {
+const MENU_ASIDE: MenuTypes = {
 	menuItems: [
 		[
 			{
@@ -150,13 +150,6 @@ const MENU_ASIDE: MenuAsideType = {
 };
 
 export const Default: Story = {
-	args: {
-		menuTitle: "N",
-		...MENU_ASIDE,
-	},
-};
-
-export const MenuAsideWithoutLogo: Story = {
 	args: {
 		...MENU_ASIDE,
 	},

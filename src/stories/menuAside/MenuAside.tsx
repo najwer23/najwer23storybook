@@ -1,39 +1,20 @@
-import { Fragment, useEffect, useState } from "react";
-import { Button } from "../button";
+import { Fragment } from "react";
 import styles from "./MenuAside.module.css"
-import { useWindowSize } from "../utils/hooks/useWindowSize";
-import { MenuAsideType } from "./MenuAside.types";
+import stylesMenu from "../menu/Menu.module.css"
+import { MenuTypes } from "../menu/Menu.types";
+import { MenuMobile } from "../menuMobile";
 
-export const MenuAside = ({ menuItems, menuTitle }: MenuAsideType) => {
-	const [menuMobileOpen, setMenuMobileOpen] = useState<boolean>(false);
-	const [width] = useWindowSize();
-
-	useEffect(() => {
-		if (width >= 1199.98) {
-			setMenuMobileOpen(false);
-			document.body.classList.remove(styles.menuOpen);
-		}
-	}, [width])
-
-	useEffect(() => {
-		if (menuMobileOpen) {
-			document.body.classList.add(styles.menuOpen);
-		} else {
-			document.body.classList.remove(styles.menuOpen);
-		}
-
-	}, [menuMobileOpen]);
+export const MenuAside = ({ menuItems }: MenuTypes) => {
 
 	return (
 		<>
 			{/* Desktop */}
 			<div className={styles.asideMenuWrapper}>
 				<div className={styles.asideMenu}>
-					{menuTitle && <div className={styles.asideMenuLogo}> {menuTitle} </div>}
 					{menuItems && (menuItems.map((menuItem) => (
 						menuItem.map((itemGroup) => (
 							<Fragment key={`desktop${itemGroup.menuTitle}`}>
-								<div className={[menuTitle && styles.asideMenuTitleSpace, styles.asideMenuTitle].join(" ")}>{itemGroup.menuTitle}</div>
+								<div className={stylesMenu.menuSubTitle}>{itemGroup.menuTitle}</div>
 								<ul>
 									{itemGroup.items.map(({ itemLinkText, itemLink, itemLinkType }) => (
 										<li key={`desktopMenu-${itemGroup.menuTitle}-${itemLinkText}`}>
@@ -48,38 +29,7 @@ export const MenuAside = ({ menuItems, menuTitle }: MenuAsideType) => {
 				</div>
 			</div>
 
-			{/* Mobile */}
-			<div className={[styles.asideMenuMobile, menuMobileOpen && styles.open].join(' ')}>
-				{menuTitle && <div className={styles.asideMenuLogo}> {menuTitle} </div>}
-				{menuItems && (menuItems.map((menuItem) => (
-					menuItem.map((itemGroup) => (
-						<Fragment key={`mobile${itemGroup.menuTitle}`}>
-							<div className={[menuTitle && styles.asideMenuTitleSpace, styles.asideMenuTitle].join(" ")}>{itemGroup.menuTitle}</div>
-							<ul>
-								{itemGroup.items.map(({ itemLinkText, itemLink, itemLinkType }) => (
-									<li key={`MobileMenu-${itemGroup.menuTitle}-${itemLinkText}`} >
-										{itemLinkType === "hash" && <a href={`/#/${itemLink}`} onClick={() => { setMenuMobileOpen(false) }} > {itemLinkText}</a>}
-										{itemLinkType === "link" && <a href={`/${itemLink}`} onClick={() => { setMenuMobileOpen(false) }}> {itemLinkText}</a>}
-										{itemLinkType === "linkOut" && <a target="_blank" rel="noopener noreferrer" href={`${itemLink}`}> {itemLinkText}</a>}
-									</li>
-								))}
-							</ul>
-						</Fragment>
-					)))))}
-			</div>
-
-			{/* Button */}
-			<div className={[styles.asideMenuMobileButton, menuMobileOpen && styles.open].join(' ')} >
-				<Button
-					text={"Menu"}
-					type={"button"}
-					ariaLabel={menuMobileOpen ? "close menu" : "open menu"}
-					onClick={() => {
-						setMenuMobileOpen(!menuMobileOpen)
-					}
-					}
-				/>
-			</div>
+			<MenuMobile menuItems={menuItems} />
 		</>
 	);
 };

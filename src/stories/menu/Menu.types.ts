@@ -9,7 +9,6 @@ interface ItemGroup {
 	items: ItemLink[];
 }
 
-export interface MenuAsideType {
+export interface MenuTypes {
 	menuItems: ItemGroup[][];
-	menuTitle?: string;
 }
