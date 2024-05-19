@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-qGIIFXMu.js";import{useMDXComponents as e}from"./index-CqcSDpoT.js";import{M as i}from"./index-COt3sHw2.js";import"./index-CDs2tPxN.js";import"./iframe-Dv50EhJ-.js";import"../sb-preview/runtime.js";import"./index-B-yFm4aN.js";import"./index-DXimoRZY.js";import"./index-BH_9z_ur.js";import"./index-DrFu-skq.js";function o(t){const r={blockquote:"blockquote",code:"code",h1:"h1",p:"p",pre:"pre",...e(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"CSSvariables"}),`
+import{j as n}from"./jsx-runtime-qGIIFXMu.js";import{useMDXComponents as e}from"./index-CqcSDpoT.js";import{M as i}from"./index-ByAvlqn_.js";import"./index-CDs2tPxN.js";import"./iframe-CG3zhl-E.js";import"../sb-preview/runtime.js";import"./index-B-yFm4aN.js";import"./index-DXimoRZY.js";import"./index-BH_9z_ur.js";import"./index-DrFu-skq.js";function o(t){const r={blockquote:"blockquote",code:"code",h1:"h1",p:"p",pre:"pre",...e(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"CSSvariables"}),`
 `,n.jsx(r.h1,{id:"css-variables",children:"CSS variables"}),`
 `,n.jsxs(r.blockquote,{children:[`
 `,n.jsx(r.p,{children:"Colors are the smiles of nature."}),`
@@ -74,23 +74,25 @@ import{j as n}from"./jsx-runtime-qGIIFXMu.js";import{useMDXComponents as e}from"
 	--n23-input-error-font-color: var(--n23-color-error);\r
 \r
 	/* menuAside */\r
-	--n23-menu-aside-background-color: var(--n23-color-surface);\r
+		--n23-menu-aside-background-color: var(--n23-color-surface);\r
 	--n23-menu-aside-font-family: var(--n23-font-family);\r
-	--n23-menu-aside-desktop-font-size: var(--n23-font-size-big);\r
-	--n23-menu-aside-desktop-font-weight: var(--n23-font-weight-normal);\r
-	--n23-menu-aside-desktop-font-color: var(--n23-color-font);\r
-	--n23-menu-aside-desktop-underline-color-active: var(--n23-color-on-primary-link-active);\r
+	--n23-menu-aside-font-size: var(--n23-font-size-big);\r
+	--n23-menu-aside-font-weight: var(--n23-font-weight-normal);\r
+	--n23-menu-aside-font-color: var(--n23-color-font);\r
+	--n23-menu-aside-underline-color-active: var(--n23-color-on-primary-link-active);\r
 	--n23-menu-aside-border-color: var(--n23-color-font);\r
 \r
-	--n23-menu-aside-mobile-font-size: var(--n23-font-size-big);\r
-	--n23-menu-aside-mobile-font-weight: var(--n23-font-weight-normal);\r
-	--n23-menu-aside-mobile-font-color: var(--n23-color-font);\r
-	--n23-menu-aside-mobile-font-color-active: var(--n23-color-on-primary-link-active);\r
+	--n23-menu-mobile-background-color: var(--n23-color-surface);\r
+	--n23-menu-mobile-font-family: var(--n23-font-family);\r
+	--n23-menu-mobile-font-size: var(--n23-font-size-big);\r
+	--n23-menu-mobile-font-weight: var(--n23-font-weight-normal);\r
+	--n23-menu-mobile-font-color: var(--n23-color-font);\r
+	--n23-menu-mobile-font-color-active: var(--n23-color-on-primary-link-active);\r
 \r
-	--n23-menu-aside-title-font-size: var(--n23-font-size-bigger);\r
-	--n23-menu-aside-title-font-weight: var(--n23-font-weight-bold);\r
-	--n23-menu-aside-title-font-color: var(--n23-color-font);\r
-	--n23-menu-aside-title-font-color-active: var(--n23-color-on-primary-link-active);\r
+	--n23-menu-title-font-size: var(--n23-font-size-bigger);\r
+	--n23-menu-title-font-weight: var(--n23-font-weight-bold);\r
+	--n23-menu-title-font-color: var(--n23-color-font);\r
+	--n23-menu-title-font-color-active: var(--n23-color-on-primary-link-active);\r
 }\r
 \r
 @media (max-width: 575.98px) {}\r
