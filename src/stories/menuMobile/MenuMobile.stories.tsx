@@ -55,13 +55,6 @@ const MENU_MOBILE: MenuTypes = {
 
 export const Default: Story = {
 	args: {
-		menuTitle: "N",
-		...MENU_MOBILE,
-	},
-};
-
-export const MenuAsideWithoutLogo: Story = {
-	args: {
 		...MENU_MOBILE,
 	},
 };

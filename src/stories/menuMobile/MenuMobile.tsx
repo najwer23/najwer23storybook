@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import styles from "./MenuMobile.module.css"
 import stylesMenu from "../menu/Menu.module.css"
 import { useWindowSize } from "../utils/hooks/useWindowSize";
@@ -6,6 +6,7 @@ import { MenuTypes } from "../menu/Menu.types";
 import { Button } from "../button";
 
 export const MenuMobile = ({ menuItems }: MenuTypes) => {
+	const ref = useRef<HTMLDivElement>(null);
 	const [menuMobileOpen, setMenuMobileOpen] = useState<boolean>(false);
 	const [width] = useWindowSize();
 
@@ -19,14 +20,24 @@ export const MenuMobile = ({ menuItems }: MenuTypes) => {
 	useEffect(() => {
 		if (menuMobileOpen) {
 			document.body.classList.add(styles.menuOpen);
+			ref.current?.classList.add(styles.open)
+
 		} else {
-			document.body.classList.remove(styles.menuOpen);
+			ref.current?.classList.add(styles.minimize)
+
+			const timeoutId = setTimeout(() => {
+				ref.current?.classList.remove(styles.minimize)
+				ref.current?.classList.remove(styles.open)
+				document.body.classList.remove(styles.menuOpen);
+			}, 200);
+
+			return () => clearTimeout(timeoutId);
 		}
 	}, [menuMobileOpen]);
 
 	return (
 		<>
-			<div className={[styles.menuMobile, menuMobileOpen && styles.open].join(' ')}>
+			<div ref={ref} className={styles.menuMobile}>
 				{menuItems && (menuItems.map((menuItem) => (
 					menuItem.map((itemGroup) => (
 						<Fragment key={`mobile${itemGroup.menuTitle}`}>
