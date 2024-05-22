@@ -18,7 +18,7 @@ export const Default: Story = {
 		arrowLeftIcon: <div>L</div>,
 		arrowRightIcon: <div>R</div>,
 		children: <>
-			{Array.from({ length: 15 }, (_, i) => <img key={i} src="https://source.unsplash.com/random/500x700" height="700" width="500" alt="" />)}
+			{Array.from({ length: 15 }, (_, i) => <img draggable="false" key={i} src="https://source.unsplash.com/random/500x700" height="700" width="500" alt="" />)}
 		</>
 	},
 

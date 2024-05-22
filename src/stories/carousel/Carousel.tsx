@@ -15,7 +15,6 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon, gap = "60px"
 		return parseInt(style.marginLeft) + parseInt(style.marginRight) + carouselRef.current?.childNodes[1].offsetWidth + Number(gap.slice(0, -2))
 	}
 
-	// check if show right arrow
 	useEffect(() => {
 		let timerId = setTimeout(() => {
 			handleScroll()
@@ -24,35 +23,38 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon, gap = "60px"
 		return () => clearTimeout(timerId);
 	}, [width]);
 
-
 	const slideLeft = () => {
-		let trans = carouselRef.current.scrollLeft - Math.floor(carouselRef.current.offsetWidth / getChildWidth()) * getChildWidth()
-		let transFinal = 0;
-		let arr = [];
+		carouselRef.current.scrollLeft -= Math.floor(carouselRef.current.offsetWidth / getChildWidth()) * getChildWidth()
 
-		for (let i = getChildWidth(); i <= (carouselRef.current?.childNodes.length - 2) * getChildWidth(); i += getChildWidth()) {
-			arr.push(i)
-			if (i > trans) {
-				transFinal = i - getChildWidth();
-				break;
-			}
-		}
+		// let trans = carouselRef.current.scrollLeft - Math.floor(carouselRef.current.offsetWidth / getChildWidth()) * getChildWidth()
+		// let transFinal = 0;
+		// let arr = [];
 
-		carouselRef.current.scrollLeft = transFinal
+		// for (let i = getChildWidth(); i <= (carouselRef.current?.childNodes.length - 2) * getChildWidth(); i += getChildWidth()) {
+		// 	arr.push(i)
+		// 	if (i > trans) {
+		// 		transFinal = i - getChildWidth();
+		// 		break;
+		// 	}
+		// }
+
+		// carouselRef.current.scrollLeft = transFinal
 	}
 
 	const slideRight = () => {
-		let trans = carouselRef.current.scrollLeft + Math.floor(carouselRef.current.offsetWidth / getChildWidth()) * getChildWidth()
-		let transFinal = 0;
+		carouselRef.current.scrollLeft += Math.floor(carouselRef.current.offsetWidth / getChildWidth()) * getChildWidth()
 
-		for (let i = getChildWidth(); i <= (carouselRef.current?.childNodes.length - 2) * getChildWidth(); i += getChildWidth()) {
-			if (i > trans) {
-				transFinal = i - getChildWidth();
-				break;
-			}
-		}
+		// let trans = carouselRef.current.scrollLeft + Math.floor(carouselRef.current.offsetWidth / getChildWidth()) * getChildWidth()
+		// let transFinal = 0;
 
-		carouselRef.current.scrollLeft += transFinal - carouselRef.current.scrollLeft
+		// for (let i = getChildWidth(); i <= (carouselRef.current?.childNodes.length - 2) * getChildWidth(); i += getChildWidth()) {
+		// 	if (i > trans) {
+		// 		transFinal = i - getChildWidth();
+		// 		break;
+		// 	}
+		// }
+
+		// carouselRef.current.scrollLeft += transFinal - carouselRef.current.scrollLeft
 	}
 
 	const handleScroll = () => {
@@ -71,9 +73,6 @@ export const Carousel = ({ children, arrowLeftIcon, arrowRightIcon, gap = "60px"
 			setShowArrowRight(true)
 		}
 	}
-
-	// touch / drag events
-	// https://codepen.io/toddwebdev/pen/yExKoj
 
 	const drag = useRef<any>({
 		isDown: false,
