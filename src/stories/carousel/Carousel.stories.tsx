@@ -24,12 +24,13 @@ export const Default: Story = {
 
 };
 
+
 export const CarouselStandardSmallerChild: Story = {
 	args: {
 		arrowLeftIcon: <div>L</div>,
 		arrowRightIcon: <div>R</div>,
 		children: <>
-			{Array.from({ length: 10 }, (_, i) => <img key={i} src="https://source.unsplash.com/random/300x400" height="400" width="300" alt="" />)}
+			{Array.from({ length: 20 }, (_, i) => <a draggable = "false" href="/jkg"><img draggable="false" key={i} src="https://source.unsplash.com/random/300x400" height="400" width="300" alt="" /></a>)}
 		</>,
 	},
 
