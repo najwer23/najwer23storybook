@@ -8,6 +8,7 @@ export const Input = ({
 	placeholder,
 	type,
 	onBlur,
+	onChange,
 	label,
 	readonly = false,
 	errorOptions,
@@ -35,6 +36,12 @@ export const Input = ({
 		}
 	}
 
+	const handleChange = (e: React.FocusEvent<HTMLInputElement>) => {
+		if (onChange !== undefined) {
+			onChange(e);
+		}
+	}
+
 	return (
 		<div className={styles.inputWrapper}>
 
@@ -54,6 +61,7 @@ export const Input = ({
 					name={name}
 					type={type}
 					onBlur={handleBlur}
+					onInput={handleChange}
 					placeholder={placeholder}
 					readOnly={readonly}
 					{...props}
