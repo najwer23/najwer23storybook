@@ -18,7 +18,7 @@ export const Default: Story = {
 		arrowLeftIcon: <div>L</div>,
 		arrowRightIcon: <div>R</div>,
 		children: <>
-			{Array.from({ length: 15 }, (_, i) => <img draggable="false" key={i} src="https://source.unsplash.com/random/500x700" height="700" width="500" alt="" />)}
+			{Array.from({ length: 15 }, (_, i) => <img draggable="false" key={i} src="https://picsum.photos/500/700" height="700" width="500" alt="" />)}
 		</>
 	},
 
@@ -30,7 +30,7 @@ export const CarouselStandardSmallerChild: Story = {
 		arrowLeftIcon: <div>L</div>,
 		arrowRightIcon: <div>R</div>,
 		children: <>
-			{Array.from({ length: 20 }, (_, i) => <a draggable = "false" href="/jkg"><img draggable="false" key={i} src="https://source.unsplash.com/random/300x400" height="400" width="300" alt="" /></a>)}
+			{Array.from({ length: 20 }, (_, i) => <a draggable="false" href="/jkg"><img draggable="false" key={i} src="https://picsum.photos/300/400" height="400" width="300" alt="" /></a>)}
 		</>,
 	},
 

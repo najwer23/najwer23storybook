@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 	args: {
-		src: "https://source.unsplash.com/random/300x400",
+		src: "https://picsum.photos/300/400",
 		alt: "",
 		ar: 3 / 4,
 	},
@@ -28,7 +28,7 @@ export const Default: Story = {
 
 export const PictureBorder: Story = {
 	args: {
-		src: "https://source.unsplash.com/random/300x400",
+		src: "https://picsum.photos/300/400",
 		alt: "",
 		ar: 3 / 4,
 		kind: "border"
@@ -40,7 +40,7 @@ export const PictureBorder: Story = {
 
 export const PictureBorderContainer: Story = {
 	args: {
-		src: "https://source.unsplash.com/random/300x400",
+		src: "https://picsum.photos/300/400",
 		alt: "",
 		ar: 3 / 4,
 		kind: "border"

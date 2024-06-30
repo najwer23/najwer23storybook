@@ -21,8 +21,8 @@ export const Default: Story = {
 		speed: "10s",
 		children: (
 			<>
-				{Array.from({ length: 5 }, (_, i) => <img key={i} src="https://source.unsplash.com/random/200x200" />)}
-				<img key={5} src="https://source.unsplash.com/random/400x200" />
+				{Array.from({ length: 5 }, (_, i) => <img key={i} src="https://picsum.photos/200/200" />)}
+				<img key={5} src="https://picsum.photos/400/200" />
 			</>
 		)
 	},
