@@ -1,0 +1,1 @@
+import{r as n}from"./index-RYns6xqu.js";const o=()=>{const[e,t]=n.useState([window.innerWidth,window.innerHeight]);return n.useLayoutEffect(()=>{function i(){e[0]!=window.innerWidth&&t([window.innerWidth,window.innerHeight])}return window.addEventListener("resize",i),i(),()=>window.removeEventListener("resize",i)},[e]),e};export{o as u};
