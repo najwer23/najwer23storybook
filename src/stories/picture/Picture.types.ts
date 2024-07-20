@@ -4,4 +4,5 @@ export interface PictureTypes {
 	ar?: number;
 	kind?: "border";
 	figcaption?: string;
+	draggable? : boolean
 }
